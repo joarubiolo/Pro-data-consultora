@@ -1,0 +1,1 @@
+En esta carpeta se incluyen todos los archivos e info sobre todo lo referido a la planificacion del proyecto y distribucion de tareas (Gantt)
