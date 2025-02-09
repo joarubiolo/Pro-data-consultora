@@ -1,0 +1,1 @@
+En esta carpeta se colocan las imagenes, gifs y cualquier otra info grafica utilizada en el readme
