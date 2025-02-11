@@ -94,47 +94,47 @@ Calificación Original	Calificación Escalada
 
 📌 Google Cloud para el despliegue del modelo:
 
-    1️⃣ Costos y comparación con otras plataformas  
-    Google Cloud ofrece precios competitivos en comparación con AWS y Azure, especialmente en:  
-    - Compute Engine: Máquinas virtuales escalables con precios bajos.  
-    - Cloud Run: Para desplegar FastAPI en un entorno sin servidor, con pago solo por uso.  
-    - AI Platform: Servicios optimizados para entrenar y servir modelos de ML.   
+  1️⃣ Costos y comparación con otras plataformas  
+  Google Cloud ofrece precios competitivos en comparación con AWS y Azure, especialmente en:  
+  - Compute Engine: Máquinas virtuales escalables con precios bajos.  
+  - Cloud Run: Para desplegar FastAPI en un entorno sin servidor, con pago solo por uso.  
+  - AI Platform: Servicios optimizados para entrenar y servir modelos de ML.   
 
-    2️⃣ Servicios específicos que ofrece Google Cloud para ML
-    Google Cloud tiene varias opciones para desplegar el modelo de predicción:  
+  2️⃣ Servicios específicos que ofrece Google Cloud para ML
+  Google Cloud tiene varias opciones para desplegar el modelo de predicción:  
 
-    | Requerimiento               | Servicio recomendado    | Justificación                                                 |
-    |-----------------------------|-------------------------|---------------------------------------------------------------|
-    | 'Entrenar el modelo'        | Vertex AI / AI Platform | Plataforma optimizada para ML, con soporte para TensorFlow, Scikit-Learn, XGBoost. |
-    | 'Preprocesar datos (ETL)'   | Dataflow / BigQuery     | Manejo eficiente de grandes volúmenes de datos.               |
-    | 'Almacenar datos de reviews'| Cloud SQL (PostgreSQL)  | Base de datos gestionada, escalable y compatible con FastAPI. |
-    | 'Desplegar API (FastAPI)'   | Cloud Run               | Escalabilidad sin servidor, bajo costo.                       |
-    | 'Monitorización del modelo' | AI Platform Predictions | Métricas en tiempo real, detección de degradación del modelo. |
+  | Requerimiento               | Servicio recomendado    | Justificación                                                 |
+  |-----------------------------|-------------------------|---------------------------------------------------------------|
+  | 'Entrenar el modelo'        | Vertex AI / AI Platform | Plataforma optimizada para ML, con soporte para TensorFlow, Scikit-Learn, XGBoost. |
+  | 'Preprocesar datos (ETL)'   | Dataflow / BigQuery     | Manejo eficiente de grandes volúmenes de datos.               |
+  | 'Almacenar datos de reviews'| Cloud SQL (PostgreSQL)  | Base de datos gestionada, escalable y compatible con FastAPI. |
+  | 'Desplegar API (FastAPI)'   | Cloud Run               | Escalabilidad sin servidor, bajo costo.                       |
+  | 'Monitorización del modelo' | AI Platform Predictions | Métricas en tiempo real, detección de degradación del modelo. |
 
-    3️⃣ Rendimiento y escalabilidad
-    🔹 Ventajas técnicas de Google Cloud
-    - Mejor costo-beneficio en GPUs: Soporte nativo para NVIDIA T4 y A100 con optimización para TensorFlow y PyTorch.  
-    - Integración con BigQuery: Permite consultas rápidas sobre grandes volúmenes de datos sin necesidad de ETL manual.  
-    - Cloud Run vs AWS Lambda: AWS tiene tiempos de arranque fríos más largos, mientras que Cloud Run mantiene mejor disponibilidad.  
-    - Autoescalado nativo: Google Cloud ajusta los recursos dinámicamente según la demanda, reduciendo costos.  
+  3️⃣ Rendimiento y escalabilidad
+  🔹 Ventajas técnicas de Google Cloud
+  - Mejor costo-beneficio en GPUs: Soporte nativo para NVIDIA T4 y A100 con optimización para TensorFlow y PyTorch.  
+  - Integración con BigQuery: Permite consultas rápidas sobre grandes volúmenes de datos sin necesidad de ETL manual.  
+  - Cloud Run vs AWS Lambda: AWS tiene tiempos de arranque fríos más largos, mientras que Cloud Run mantiene mejor disponibilidad.  
+  - Autoescalado nativo: Google Cloud ajusta los recursos dinámicamente según la demanda, reduciendo costos.  
 
-    4️⃣ Seguridad y cumplimiento
-    Google Cloud cumple con estándares globales:  
-    ✅ ISO 27001, SOC 1/2/3, GDPR, HIPAA, lo que garantiza que los datos de clientes y negocios están protegidos.  
+  4️⃣ Seguridad y cumplimiento
+  Google Cloud cumple con estándares globales:  
+  ✅ ISO 27001, SOC 1/2/3, GDPR, HIPAA, lo que garantiza que los datos de clientes y negocios están protegidos.  
 
-    Además, ofrece:  
-    - Cloud Identity & Access Management (IAM) para controlar accesos.  
-    - Cifrado de datos en tránsito y en reposo.  
-    - Cloud Audit Logs para rastrear actividad y detectar anomalías.  
+  Además, ofrece:  
+  - Cloud Identity & Access Management (IAM) para controlar accesos.  
+  - Cifrado de datos en tránsito y en reposo.  
+  - Cloud Audit Logs para rastrear actividad y detectar anomalías.  
 
-    📌 Conclusión Final
-    🔹 Google Cloud es la opción más económica y ofrece beneficios adicionales:  
-    ✅ Menor costo en computación y almacenamiento.  
-    ✅ Mejor integración con herramientas de Machine Learning (Vertex AI, BigQuery).  
-    ✅ Mayor escalabilidad con Cloud Run y AI Platform.  
-    ✅ Alto nivel de seguridad y cumplimiento normativo.  
+  📌 Conclusión Final
+  🔹 Google Cloud es la opción más económica y ofrece beneficios adicionales:  
+  ✅ Menor costo en computación y almacenamiento.  
+  ✅ Mejor integración con herramientas de Machine Learning (Vertex AI, BigQuery).  
+  ✅ Mayor escalabilidad con Cloud Run y AI Platform.  
+  ✅ Alto nivel de seguridad y cumplimiento normativo.  
 
-    📌 Recomendación: Utilizar Cloud Run para la API, AI Platform para el modelo y BigQuery para almacenar datos. Esto reducirá costos y mejorará el rendimiento del sistema. 🚀
+  📌 Recomendación: Utilizar Cloud Run para la API, AI Platform para el modelo y BigQuery para almacenar datos. Esto reducirá costos y mejorará el rendimiento del sistema. 🚀
 
 
 
