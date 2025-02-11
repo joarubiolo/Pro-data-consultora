@@ -52,7 +52,7 @@
   Si la reseña es "La comida es excelente", el vector numérico podría verse así: [0.12, 0.34, 0.05, ..., 0.67]
 
 3️⃣ Escala los datos numéricos usando StandardScaler
-  📌 ¿Por qué es importante?
+  ¿Por qué es importante?
   Los modelos de Machine Learning funcionan mejor cuando las características numéricas están en la misma escala. StandardScaler convierte todas las variables en valores con media 0 y desviación estándar 1, evitando que una variable con valores grandes domine a otras.
 
 🔹 Ejemplo antes y después de la escala:
