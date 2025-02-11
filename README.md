@@ -31,11 +31,11 @@
 
 ## **Integrantes**
 
-- [Argenis Alexis Bolivar ](https://github.com/) - *Data Engineer*
-- [Ezequiel Lizio](https://github.com/) - *Data Scientist*
-- [Paula Irazoqui](https://github.com/) - *Data Analist*
+- [Argenis Alexis Bolivar ](https://github.com/Argeboliv05) - *Data Engineer*
+- [Ezequiel Lizio](https://github.com/Ezecordoba) - *Data Scientist*
+- [Paula Irazoqui](https://github.com/paulairazoqui) - *Data Analist*
 - [Joaquín Rubiolo](https://github.com/joarubiolo) - *Data Scientist*
-- [Sebastian Prats](https://github.com/) - *Data Analist*
+- [Sebastian Prats](https://github.com/sebaprats) - *Data Analist*
 
 
 ## **Stack Tecnologico**
