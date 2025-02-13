@@ -17,11 +17,11 @@
 
 ## **Integrantes**
 
-- [Argenis Alexis Bolivar ](https://github.com/Argeboliv05) - *Data Engineer*
-- [Ezequiel Lizio](https://github.com/Ezecordoba) - *Data Scientist*
-- [Paula Irazoqui](https://github.com/paulairazoqui) - *Data Analist*
-- [Joaquín Rubiolo](https://github.com/joarubiolo) - *Data Scientist*
-- [Sebastian Prats](https://github.com/sebaprats) - *Data Analist*
+- [Argenis Alexis Bolivar ](https://github.com/Argeboliv05) - *Scrum Master*
+- [Ezequiel Lizio](https://github.com/Ezecordoba) - *ML Engineer*
+- [Paula Irazoqui](https://github.com/paulairazoqui) - *Data Engineer*
+- [Joaquín Rubiolo](https://github.com/joarubiolo) - *DevOps*
+- [Sebastian Prats](https://github.com/sebaprats) - *Data Analyst*
 
 
 ## **Entendimiento de la Situación Actual**
@@ -78,7 +78,7 @@ Desarrollar un sistema de recomendación que, basado en datos de negocios gastro
 🔹 Evita incluir negocios antiguos cuyo comportamiento puede no ser representativo.
 🔹 Nos aseguramos de que los datos sean recientes y relevantes.
 
-### 🛠️ **Tecnología y Herramientas**
+### 🛠️ **Stack Tecnologico**
 
 📢 **Usaremos herramientas estándar para garantizar reproducibilidad:**
 
@@ -155,7 +155,6 @@ Este KPI mide la cantidad de negocios en una categoría específica en relación
 
 ### **👥 Roles del Equipo**
 
-✅ **Product Owner (PO):** Argenis Bolivar
 ✅ **Scrum Master:** Argenis Bolivar
 ✅ **Data Engineer:** Paula Irazoqui
 ✅ **Data Analyst:** Sebastián Prat
