@@ -84,18 +84,54 @@ Desarrollar un sistema de recomendación que, basado en datos de negocios gastro
 
 ✅ **Almacenamiento de Datos**
 
-🔹 Local (CSV, Parquet)
+🔹 Local (CSV, Parquet)  
+  **Ventajas:**  
+  ✔️ Fácil de manejar y compartir.  
+  ✔️ Compatible con la mayoría de herramientas de análisis de datos.  
+  ✔️ Parquet ofrece mayor eficiencia en almacenamiento y rendimiento para grandes volúmenes de datos.
+
 🔹 **Google Cloud Storage** como Data Lake
+  **Ventajas:**  
+  ✔️ Escalabilidad y alta disponibilidad.  
+  ✔️ Integración con Google BigQuery, Spark y otras herramientas.  
+  ✔️ Seguridad avanzada con control de acceso y encriptación.
+
 🔹 **PostgreSQL** como Data Warehouse
+  **Ventajas:**  
+  ✔️ Open-source y altamente extensible.  
+  ✔️ Soporta SQL estándar y funciones avanzadas.  
+  ✔️ Optimización para procesamiento analítico (OLAP). 
 
 ✅ **Procesamiento y Análisis**
 🔹 **Python (Pandas, NumPy, Scikit-learn)**
+  **Ventajas:**  
+  ✔️ Comunidad activa y bien documentada.  
+  ✔️ Alto rendimiento en procesamiento de datos.  
+  ✔️ Amplia compatibilidad con otros frameworks de ML y visualización.
+  
 🔹 **EDA y Visualización:** Seaborn, Matplotlib
+  **Ventajas:**  
+  ✔️ Exploración rápida de patrones en los datos.  
+  ✔️ Personalización avanzada de gráficos.  
+  ✔️ Integración con Pandas para visualización directa de DataFrames.
+  
 🔹 **ML Models:** Random Forest, XGBoost, Regresión Logística
+  **Ventajas:**  
+  ✔️ Modelos interpretables y eficientes.  
+  ✔️ Adaptabilidad a distintos tipos de datos.  
+  ✔️ XGBoost ofrece gran rendimiento en grandes volúmenes de datos.  
 
 ✅ **Despliegue**
 🔹 Dashboard en **PowerBI**
+  **Ventajas:**  
+  ✔️ Visualizaciones dinámicas y personalizables.  
+  ✔️ Integración con diversas fuentes de datos.  
+  ✔️ Facilidad de uso para usuarios sin conocimientos técnicos avanzados.
 🔹  API en **FastAPI** para consultas en tiempo real
+  **Ventajas:**  
+  ✔️ Rápido y eficiente gracias a su compatibilidad con ASGI.  
+  ✔️ Documentación automática con Swagger UI.  
+  ✔️ Fácil integración con bases de datos y modelos de machine learning.  
 
 ## **KPIs**
 
