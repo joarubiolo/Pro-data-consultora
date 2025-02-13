@@ -145,7 +145,7 @@ Calculamos cuánto aumentó o disminuyó la calificación promedio en el último
 
 📢 **Fórmula:**
 
-![Texto alternativo](./imagen/KPI_2.png)
+![Texto alternativo](./Imagenes-readme/KPI_2.png)
 
 📌 **Leyenda:**
 
@@ -161,7 +161,7 @@ Este KPI mide la cantidad de negocios exitosos, medidos por calificaciones recib
 
 📢 **Fórmula:**
 
-![Texto alternativo](./imagen/KPI_1.png)
+![Texto alternativo](./Imagenes-readme/KPI_1.png)
 
 📌 **Leyenda:**
 
@@ -177,7 +177,7 @@ Este KPI mide la cantidad de negocios en una categoría específica en relación
 
 📢 **Fórmula:**
 
-![Texto alternativo](./imagen/KPI_3.png)
+![Texto alternativo](./Imagenes-readme/KPI_3.png)
 
 📌 **Leyenda:**
 
@@ -327,6 +327,6 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 
 #### 4️⃣ Diagrama de Gantt
 
-![Texto alternativo](./imagen/GanttProyecto.png)
+![Texto alternativo](./Imagenes-readme/GanttProyecto.png)
 
 
