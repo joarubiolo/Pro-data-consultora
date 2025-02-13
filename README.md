@@ -4,27 +4,26 @@
 
 # Consultora Pro-Data
 
-## **📋 Índice**
+## 📋 Índice
 
-- [**Integrantes**](#integrantes)
-- [**Entendimiento de la Situación Actual**](#entendimiento-de-la-situación-actual)
-- [**Objetivo General**](#objetivo-general)
-- [**Objetivos Específicos**](#objetivos-específicos)
-- [**Alcance del Proyecto**](#alcance-del-proyecto)
-  - [**¿Qué vamos a hacer?**](#¿qué-vamos-a-hacer?)
-  - [**Base de Recomendación**](#base-de-recomendación)
-  - [**Alcance Geográfico**](#alcance-geográfico)
-  - [**Limitación en el Tiempo**](#limitación-en-el-tiempo)
-  - [**Tecnología y Herramientas**](#tecnología-y-herramientas)
-  - [**Tecnología y Herramientas**](#tecnología-y-herramientas)
-- [**KPIs**](#kpis)
-  - [**Tasa de Crecimiento de Calificaciones (Calificación promedio mensual)**](#tasa-de-crecimiento-de-calificaciones-(calificación-promedio-mensual))
-  - [**Porcentaje de Negocios Exitosos**](#porcentaje-de-negocios-exitosos)
-  - [**Tasa de Saturación del Mercado (Ratio de negocios por habitantes)**](#tasa-de-saturación-del-mercado-(ratio-de-negocios-por-habitantes))
-  - [**Tasa de Saturación del Mercado (Ratio de negocios por habitantes)**](#tasa-de-saturación-del-mercado-(ratio-de-negocios-por-habitantes))
-- [**Metodología de Trabajo**](#metodología-de-trabajo)
-  - [**Roles del Equipo**](#roles-del-equipo)
-  - [**Roles en cada Sprint**](#roles-en-cada-sprint)
+- [Integrantes](#integrantes)
+- [Entendimiento de la Situación Actual](#entendimiento-de-la-situacion-actual)
+- [Objetivo General](#objetivo-general)
+- [Objetivos Específicos](#objetivos-especificos)
+- [Alcance del Proyecto](#alcance-del-proyecto)
+  - [¿Qué vamos a hacer?](#que-vamos-a-hacer)
+  - [Base de Recomendación](#base-de-recomendacion)
+  - [Alcance Geográfico](#alcance-geografico)
+  - [Limitación en el Tiempo](#limitacion-en-el-tiempo)
+  - [Tecnología y Herramientas](#tecnologia-y-herramientas)
+- [KPIs](#kpis)
+  - [Tasa de Crecimiento de Calificaciones](#tasa-de-crecimiento-de-calificaciones)
+  - [Porcentaje de Negocios Exitosos](#porcentaje-de-negocios-exitosos)
+  - [Tasa de Saturación del Mercado](#tasa-de-saturacion-del-mercado)
+- [Metodología de Trabajo](#metodologia-de-trabajo)
+  - [Roles del Equipo](#roles-del-equipo)
+  - [Roles en cada Sprint](#roles-en-cada-sprint)
+
 
 
 ## **Integrantes**
