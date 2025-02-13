@@ -153,11 +153,11 @@ Calculamos cuánto aumentó o disminuyó la calificación promedio en el último
 * **CP_T**: Calificación promedio en el último trimestre.
 * **CP_T-1**: Calificación promedio en el trimestre anterior.
 
-### 2️⃣ **Porcentaje de Negocios Exitosos**
+### 2️⃣ **Tasa de Crecimiento de Reviews**
 
-📢 **Objetivo:** Evaluar la probabilidad de éxito de un negocio en determinada zona.
+📢 **Objetivo:** Incrementar la cantidad de reseñas del nuevo negocio en un 5% por trimestre
 
-Este KPI mide la cantidad de negocios exitosos, medidos por calificaciones recibidas, en relación con la cantidad de negocios abiertos en el último trimestre.
+Este KPI medirá la evolución de la popularidad del nuevo negocio gastronómico respecto del trimestre anterior, entendiendo que un indicador de esa popularidad es que aumente la cantidad de reseñas.
 
 📢 **Fórmula:**
 
@@ -165,15 +165,15 @@ Este KPI mide la cantidad de negocios exitosos, medidos por calificaciones recib
 
 📌 **Leyenda:**
 
-* **PNE**: Porcentaje de Negocios Exitosos.
-* **NE**: Número de negocios exitosos.
-* **TN**: Total de negocios abiertos en el último trimestre.
+* **TCR**: Tasa de Crecimiento de Reviews ajustada al objetivo del 5%.
+* **R_t**: Cantidad de reseñas en el trimestre actual.
+* **R_t-1**: Cantidad de reseñas en el trimestre anterior.
+ 
+### 3️⃣ **Indice de repeticion de clientes**
 
-### 3️⃣ **Tasa de Saturación del Mercado (Ratio de negocios por habitantes)**
+📢 **Objetivo:** incrementar el índice de repetición de clientes en un 10 % por trimestre
 
-📢 **Objetivo:** Evaluar la cantidad de negocios de determinado rubro en relación con la cantidad de hipotéticos consumidores.
-
-Este KPI mide la cantidad de negocios en una categoría específica en relación con la población de la ubicación en el último trimestre en relación con el anterior,a fin de determinar si hay margen para un nuevo local en la zona.
+Este KPI medirá la satisfacción de los clientes a partir de si regresan o no al local en el último trimestre en relación al trimestre anterior.
 
 📢 **Fórmula:**
 
@@ -181,9 +181,10 @@ Este KPI mide la cantidad de negocios en una categoría específica en relación
 
 📌 **Leyenda:**
 
-* **RNH**: Ratio de Negocios por Habitante.
-* **N**: Número de negocios en una categoría y ciudad.
-* **P**: Población total de la ciudad.
+* **ICR**: Índice de Repetición de Clientes ajustado al objetivo del 10%.
+* **C_r**: Número de clientes que repiten en el trimestre actual.
+* **C_t**: Número total de clientes en el trimestre actual.
+
 
 ## **Metodología de Trabajo**
 
