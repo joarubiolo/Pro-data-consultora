@@ -204,7 +204,7 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 
 | **Sprint**   | **Product Owner**                                 | **Scrum Master**                                | **Data Engineer**           | **Data Analyst**             | **ML Engineer**      | **DevOps**                               |
 | ------------------ | ------------------------------------------------------- | ----------------------------------------------------- | --------------------------------- | ---------------------------------- | -------------------------- | ---------------------------------------------- |
-| **Sprint 1** | Definir objetivos y<br />alcance                        | Gestionar<br />backlog y <br />reuniones              | Extraer y<br />limpiar datos      | Explorar datos<br />y definir KPIs | No aplica aún             | Configurar<br />repositorio Git                |
+| **Sprint 1** | Definir objetivos y<br />alcance                        | Gestionar<br />backlog y <br />reuniones              | Extraer y<br />limpiar datos      | Explorar datos<br />y definir KPIs | Extraer y<br />limpiar datos      | Configurar<br />repositorio Git                |
 | **Sprint 2** | Priorizar<br />implementación <br />del ETL            | Asegurar<br />que los <br />procesos se <br />cumplan | Implementar<br />y validar el ETL | Analizar calidad<br />de datos     | No aplica aún             | Configurar<br />infraestructura <br />de datos |
 | **Sprint 3** | Priorizar desarrollo<br /> del modelo <br />y dashboard | Coordinar la<br />entrega final                       | Optimizar<br />datos para ML      | Visualizar KPIs<br />y resultados  | Entrenar modelo<br />de ML | Desplegar API<br />y dashboard                 |
 
