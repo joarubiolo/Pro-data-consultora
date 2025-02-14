@@ -145,7 +145,7 @@ Calculamos cuánto aumentó o disminuyó la calificación promedio en el último
 
 📢 **Fórmula:**
 
-![Texto alternativo](./Imagenes-readme/KPI_2.png)
+![Texto alternativo](./Imagenes-readme/KPI_2.jpg)
 
 📌 **Leyenda:**
 
@@ -177,7 +177,7 @@ Este KPI medirá la satisfacción de los clientes a partir de si regresan o no a
 
 📢 **Fórmula:**
 
-![Texto alternativo](./Imagenes-readme/KPI_3.png)
+![Texto alternativo](./Imagenes-readme/KPI_3.jpg)
 
 📌 **Leyenda:**
 
