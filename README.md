@@ -328,6 +328,6 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 
 #### 4️⃣ Diagrama de Gantt
 
-![Texto alternativo](./Imagenes-readme/GanttProyecto.png)
+![Texto alternativo](./Imagenes-readme/Gantt_Proyecto.png)
 
 
