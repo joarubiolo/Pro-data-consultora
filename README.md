@@ -135,7 +135,7 @@ Este KPI medirá la evolución en la calificación promedio del negociogastronó
 
 📢 **Fórmula:**
 
-![Texto alternativo](./Imagenes-readme/KPI_2.png)
+![Texto alternativo](./Imagenes-readme/KPI_2.jpg)
 
 📌 **Leyenda:**
 
@@ -167,7 +167,7 @@ Este KPI medirá la satisfacción de los clientes a partir de si regresan o no a
 
 📢 **Fórmula:**
 
-![Texto alternativo](./Imagenes-readme/KPI_3.png)
+![Texto alternativo](./Imagenes-readme/KPI_3.jpg)
 
 📌 **Leyenda:**
 
@@ -317,4 +317,4 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 
 #### 4️⃣ Diagrama de Gantt
 
-![Texto alternativo](./Imagenes-readme/GanttProyecto.png)
+![Texto alternativo](./Imagenes-readme/Gantt_Proyecto.png)
