@@ -6,6 +6,8 @@ Este modelo de base de datos ha sido diseñado para almacenar y gestionar inform
 
 La base de datos sigue un **modelo de estrella**, donde las tablas principales (`business` y `metadata`) almacenan información de los negocios y se relacionan con otras tablas dimensionales, como `reviews_y`, `reviews_gm`, `categoria` y `ciudades`.
 
+![base](/Imagenes-readme/base_modelada.jpg)
+
 ---
 
 ## **Estructura y Relaciones**
