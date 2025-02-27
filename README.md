@@ -319,3 +319,53 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 #### 4️⃣ Diagrama de Gantt
 
 ![Texto alternativo](./Imagenes-readme/Gantt_Proyecto.png)
+
+---
+
+## **Pipeline ETL**
+
+El proceso de **Extracción, Transformación y Carga (ETL)** se llevó a cabo para garantizar que los datos utilizados en el análisis y modelado sean limpios, estructurados y almacenados de manera eficiente.
+
+### **1️⃣ Extracción de Datos**
+Los datos utilizados en este proyecto provienen de diversas fuentes, incluyendo plataformas de reseñas gastronómicas como **Google Maps** y **Yelp**, además de información demográfica extraída mediante **web scraping** de fuentes públicas.
+
+### **2️⃣ Transformación de Datos**
+Para asegurar la calidad de los datos y facilitar su análisis, se llevaron a cabo los siguientes procesos de transformación:
+
+✅ **Limpieza de Datos**  
+- Se verificó la presencia de valores nulos y duplicados en las columnas clave.  
+- No se detectaron problemas significativos en este aspecto.
+
+✅ **Generación de Features**  
+- Se realizó un **análisis de sentimiento** sobre los comentarios de los usuarios para capturar la percepción del público respecto a cada establecimiento.  
+- Se realizó un **desglose de atributos y categorías**, separando información relevante en columnas independientes para facilitar su análisis.
+
+✅ **Modelo de Datos**  
+- Se diseñó un **modelo en estrella**, con una tabla central que contiene la información de los negocios y tablas auxiliares que almacenan detalles específicos.  
+- La estructura del modelo de datos está documentada en el repositorio dentro de la carpeta **documentación**.
+
+### **3️⃣ Carga de Datos**
+Los datos procesados fueron almacenados en **buckets de Google Cloud** y también se encuentran disponibles en el repositorio del proyecto para su consulta y análisis.
+
+---
+
+### **4️⃣ Orquestación y Automatización**
+
+
+---
+
+### **5️⃣ Carga Incremental**
+
+
+---
+
+### **6️⃣ Desafíos y Optimización**
+Algunos de los principales desafíos y optimizaciones implementadas fueron:
+
+✅ Manejo y limpieza de datos de múltiples fuentes.  
+✅ Implementación del modelo de datos en estrella para estructurar la información de forma eficiente.  
+✅ Desglose de atributos y categorías para mejorar la organización y análisis de los datos.  
+
+---
+
+
