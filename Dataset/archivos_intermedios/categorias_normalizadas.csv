@@ -1,0 +1,259 @@
+category_id,category,group
+1,chinese,Chinese
+1,taiwanese,Chinese
+1,chinese noodle,Chinese
+1,cantonese,Chinese
+1,sichuan,Chinese
+1,dim sum,Chinese
+1,delivery chinese,Chinese
+1,hong kong style fast food,Chinese
+1,mandarin,Chinese
+2,japanese,Japanese
+2,authentic japanese,Japanese
+2,japanese curry,Japanese
+2,izakaya,Japanese
+2,modern izakaya,Japanese
+2,ramen,Japanese
+2,sushi,Japanese
+2,teppanyaki,Japanese
+2,udon noodle,Japanese
+2,yakitori,Japanese
+3,korean,Korean
+3,korean barbecue,Korean
+4,thai,Thai
+5,vietnamese,Vietnamese
+5,pho,Vietnamese
+6,filipino,Pacific & Filipino
+6,hawaiian,Pacific & Filipino
+7,indian,Indian
+7,modern indian,Indian
+7,indian muslim,Indian
+7,indian sizzler,Indian
+7,kerala,Indian
+7,biryani,Indian
+8,pakistani,Pakistani & Afghani
+8,afghani,Pakistani & Afghani
+8,bangladeshi,Pakistani & Afghani
+9,middle eastern,Middle Eastern
+9,lebanese,Middle Eastern
+9,israeli,Middle Eastern
+9,falafel,Middle Eastern
+9,shawarma,Middle Eastern
+9,persian,Middle Eastern
+9,turkish,Middle Eastern
+9,gyro,Middle Eastern
+10,asian,Pan-Asian
+10,asian fusion,Pan-Asian
+10,panasian,Pan-Asian
+11,moroccan,North African
+11,egyptian,North African
+12,west african,West African
+12,cape verdean,West African
+13,african,General African
+13,ethiopian,General African
+13,south african,General African
+14,mexican,Mexican
+14,mexican torta,Mexican
+14,taco,Mexican
+14,texmex,Mexican
+14,burrito,Mexican
+15,central american,Centroamerican
+15,costa rican,Centroamerican
+15,guatemalan,Centroamerican
+15,honduran,Centroamerican
+15,nicaraguan,Centroamerican
+15,salvadoran,Centroamerican
+16,argentinian,Southern Cone
+16,chilean,Southern Cone
+16,uruguayan,Southern Cone
+17,brazilian,Tropical South American
+17,colombian,Tropical South American
+17,ecuadorian,Tropical South American
+17,peruvian,Tropical South American
+17,venezuelan,Tropical South American
+18,caribbean,Caribbean
+18,cuban,Caribbean
+18,dominican,Caribbean
+18,haitian,Caribbean
+18,jamaican,Caribbean
+18,puerto rican,Caribbean
+19,french,Western European
+19,modern french,Western European
+19,french steakhouse,Western European
+19,belgian,Western European
+19,dutch,Western European
+19,spanish,Western European
+19,portuguese,Western European
+19,italian,Western European
+19,modern european,Western European
+19,tuscan,Western European
+19,northern italian,Western European
+19,southern italian,Western European
+19,neapolitan,Western European
+20,german,Central European
+20,austrian,Central European
+20,swiss,Central European
+20,czech,Central European
+20,polish,Central European
+20,hungarian,Central European
+21,eastern european,Eastern European
+21,bulgarian,Eastern European
+21,romanian,Eastern European
+21,russian,Eastern European
+21,serbian,Eastern European
+21,georgian,Eastern European
+21,uzbeki,Eastern European
+22,scandinavian,Nordic & Scandinavian
+22,swedish,Nordic & Scandinavian
+22,icelandic,Nordic & Scandinavian
+23,british,British & Irish
+23,modern british,British & Irish
+23,english,British & Irish
+23,irish,British & Irish
+24,canadian,NorthAmerican
+24,american,NorthAmerican
+24,new american,NorthAmerican
+24,traditional american,NorthAmerican
+24,southern us,NorthAmerican
+24,southwestern us,NorthAmerican
+24,cajun,NorthAmerican
+24,creole,NorthAmerican
+24,contemporary louisiana,NorthAmerican
+24,down home cooking,NorthAmerican
+24,floridian,NorthAmerican
+24,new england,NorthAmerican
+24,californian,NorthAmerican
+25,australian,Australian
+26,pizza,Pizza
+27,fast food,Burgers & Fast Food
+27,hamburger,Burgers & Fast Food
+27,cheesesteak,Burgers & Fast Food
+27,chicken wings,Burgers & Fast Food
+27,hot dog,Burgers & Fast Food
+27,hoagie,Burgers & Fast Food
+27,po boys,Burgers & Fast Food
+28,seafood,Seafood
+28,angler fish,Seafood
+28,fish chips,Seafood
+28,seafood donburi,Seafood
+28,seafood farm,Seafood
+28,seafood market,Seafood
+28,seafood wholesaler,Seafood
+29,poke,Poke
+29,poke bar,Poke
+30,chophouse,Steakhouse & Grilled
+30,barbecue,Steakhouse & Grilled
+30,mongolian barbecue,Steakhouse & Grilled
+31,breakfast,Breakfast & brunch
+31,brunch,Breakfast & brunch
+32,vegetarian,Vegetarian & Vegan
+32,vegan,Vegetarian & Vegan
+32,glutenfree,Vegetarian & Vegan
+32,organic,Vegetarian & Vegan
+32,raw food,Vegetarian & Vegan
+32,tofu,Vegetarian & Vegan
+33,dessert,Desserts & Bakeries
+33,pancake,Desserts & Bakeries
+33,sundae,Desserts & Bakeries
+34,fondue,Fondue & Raclette
+34,raclette,Fondue & Raclette
+35,rice,Rice & Grain-Based
+35,biryani,Rice & Grain-Based
+36,or cafe,Cafés
+36,espresso bar,Cafés
+36,coffee,Cafés
+37,restaurant,Restaurant
+38,buffet,Buffet
+39,fine dining,Fine Dining
+40,bar,Bars & Nightlife
+40,bar grill,Bars & Nightlife
+40,cocktail bar,Bars & Nightlife
+40,cider bar,Bars & Nightlife
+40,dart bar,Bars & Nightlife
+40,gay bar,Bars & Nightlife
+40,hookah bar,Bars & Nightlife
+40,karaoke bar,Bars & Nightlife
+40,live music bar,Bars & Nightlife
+40,piano bar,Bars & Nightlife
+40,sports bar,Bars & Nightlife
+40,stand bar,Bars & Nightlife
+40,tiki bar,Bars & Nightlife
+40,wine bar,Bars & Nightlife
+41,fresh food market,Food Markets & Wholesale
+41,frozen food store,Food Markets & Wholesale
+41,frozen food manufacturer,Food Markets & Wholesale
+41,self service,Food Markets & Wholesale
+41,wholesale food store,Food Markets & Wholesale
+41,dried seafood store,Food Markets & Wholesale
+41,seafood market,Food Markets & Wholesale
+42,catering food and drink supplier,Food Industry & Supply
+42,food and beverage consultant,Food Industry & Supply
+42,food and beverage exporter,Food Industry & Supply
+42,food bank,Food Industry & Supply
+42,food broker,Food Industry & Supply
+42,food court,Food Industry & Supply
+42,food delivery,Food Industry & Supply
+42,food machinery supplier,Food Industry & Supply
+42,food manufacturer,Food Industry & Supply
+42,food manufacturing supply,Food Industry & Supply
+42,food processing company,Food Industry & Supply
+42,food processing equipment,Food Industry & Supply
+42,food producer,Food Industry & Supply
+42,food products supplier,Food Industry & Supply
+42,food seasoning manufacturer,Food Industry & Supply
+42,food service,Food Industry & Supply
+42,food store,Food Industry & Supply
+42,supply store,Food Industry & Supply
+43,eyebrow bar,Eyebrow & Beauty Bars
+44,eclectic,Ethnic & Fusion
+44,ethnic,Ethnic & Fusion
+44,fusion,Ethnic & Fusion
+44,panlatin,Ethnic & Fusion
+44,nuevo latino,Ethnic & Fusion
+45,family,Family & Traditional
+45,traditional,Family & Traditional
+45,country food,Family & Traditional
+45,soul food,Family & Traditional
+46,snack bar,Snacks & Small Plates
+46,small plates,Snacks & Small Plates
+46,tapas,Snacks & Small Plates
+46,tapas bar,Snacks & Small Plates
+47,soup,Soup & Noodles
+47,chinese noodle,Soup & Noodles
+47,udon noodle,Soup & Noodles
+47,ramen,Soup & Noodles
+47,pho,Soup & Noodles
+48,bar pmu,Unclassified
+48,bar furniture store,Unclassified
+48,bar stool supplier,Unclassified
+48,food,Unclassified
+48,food and drink,Unclassified
+49,mediterranean,Mediterranean & Greek
+49,greek,Mediterranean & Greek
+50,southeast asian,Southeast Asian
+50,cambodian,Southeast Asian
+50,laotian,Southeast Asian
+50,indonesian,Southeast Asian
+50,singaporean,Southeast Asian
+51,south asian,South Asian
+51,nepalese,South Asian
+52,latin american,Latin American
+52,south american,Latin American
+53,jewish,Jewish & Kosher
+53,kosher,Jewish & Kosher
+54,halal,Halal
+55,health food,Health & Organic
+55,health food store,Health & Organic
+55,organic food store,Health & Organic
+56,chicken,Chicken & Meat Dishes
+56,meat dish,Chicken & Meat Dishes
+57,wok,Wok & Stir-Fry
+58,oyster bar,Oyster Bars
+59,karaoke,Karaoke
+60,delivery,Delivery & Takeout
+60,takeout,Delivery & Takeout
+61,lunch,Lunch
+62,hot pot,Hot Pot
+63,continental,Continental
+64,european,European
+65,armenian,Armenian
