@@ -16,7 +16,7 @@
 
 ## **Integrantes**
 
-- [Argenis Alexis Bolivar ](https://github.com/Argeboliv05) - *Scrum Master*
+- [Argenis Alexis Bolivar ](https://github.com/Argeboliv05) - *Proyect Manager*
 - [Ezequiel Lizio](https://github.com/Ezecordoba) - *ML Engineer*
 - [Paula Irazoqui](https://github.com/paulairazoqui) - *Data Engineer*
 - [Joaquín Rubiolo](https://github.com/joarubiolo) - *DevOps*
@@ -36,11 +36,11 @@ Desarrollar un sistema de recomendación que, basado en datos de negocios gastro
 
 ## **Objetivos Específicos**
 
-1️⃣ Analizar la distribución geográfica de los negocios gastronómicos en Florida para identificar zonas con baja oferta.
-2️⃣ Evaluar la calidad de los negocios existentes mediante análisis de reviews y ratings.
-3️⃣ Determinar características clave de los negocios exitosos.
-4️⃣ Desarrollar un modelo de recomendación basado en carencias del mercado y calidad de la competencia.
-5️⃣ Validar la efectividad del sistema con datos históricos.
+1️⃣ Analizar la distribución geográfica de los negocios gastronómicos en Florida para identificar zonas con baja oferta.<br>
+2️⃣ Evaluar la calidad de los negocios existentes mediante análisis de reviews y ratings.<br>
+3️⃣ Determinar características clave de los negocios exitosos.<br>
+4️⃣ Desarrollar un modelo de recomendación basado en carencias del mercado y calidad de la competencia.<br>
+5️⃣ Validar la efectividad del sistema con datos históricos.<br>
 
 ## **Alcance del Proyecto**
 
@@ -50,31 +50,31 @@ Desarrollar un sistema de recomendación que, basado en datos de negocios gastro
 
 🔹 **Esto incluye:**
 
-✅ Un **EDA (Exploratory Data Analysis)** completo para entender los datos.
-✅ Implementación de un  **Data Warehouse** para almacenar y gestionar la base de datos de manera eficiente.
-✅ Creación de **features clave** que impactan el éxito de un negocio.
-✅ Entrenamiento de un **modelo de clasificación** para predecir éxito o fracaso.
-✅ Implementación de un **dashboard interactivo** para visualizar los resultados.
-✅ **Despliegue del modelo en la nube** para uso en tiempo real.
+✅ Un **EDA (Exploratory Data Analysis)** completo para entender los datos.<br>
+✅ Implementación de un  **Data Warehouse** para almacenar y gestionar la base de datos de manera eficiente.<br>
+✅ Creación de **features clave** que impactan el éxito de un negocio.<br>
+✅ Entrenamiento de un **modelo de clasificación** para predecir éxito o fracaso.<br>
+✅ Implementación de un **dashboard interactivo** para visualizar los resultados.<br>
+✅ **Despliegue del modelo en la nube** para uso en tiempo real.<br>
 
 ### **🏆 Base de Recomendación**
 
 📢 **Nuestro sistema recomendará ubicaciones para nuevos negocios basándose en los siguientes criterios:**
 
-✅ Se ubica en una **zona con baja oferta gastronómica** o con **competencia de baja calidad** según calificaciones y reviews.
-✅ Se alinea con las **características clave de los negocios exitosos**, identificadas en el análisis de datos.
-✅ Se encuentra en un área con **potencial de demanda insatisfecha**, determinada por la evaluación de check-ins y reviews.
+✅ Se ubica en una **zona con baja oferta gastronómica** o con **competencia de baja calidad** según calificaciones y reviews.<br>
+✅ Se alinea con las **características clave de los negocios exitosos**, identificadas en el análisis de datos.<br>
+✅ Se encuentra en un área con **potencial de demanda insatisfecha**, determinada por la evaluación de check-ins y reviews.<br>
 
 ### **🌍 Alcance Geográfico**
 
-📢 **Limitamos el análisis a negocios en el Estado Florida de EE.UU.**
-🔹 Esto permite trabajar con un dataset más limpio y evitar sesgos por diferencias culturales en reseñas.
+📢 **Limitamos el análisis a negocios en el Estado Florida de EE.UU.**<br>
+🔹 Esto permite trabajar con un dataset más limpio y evitar sesgos por diferencias culturales en reseñas.<br>
 
 ### **🕒 Limitación en el Tiempo**
 
-📢 **Nuestro modelo solo se entrenará con datos de los últimos 5 años (2017-2022).**
-🔹 Evita incluir negocios antiguos cuyo comportamiento puede no ser representativo.
-🔹 Nos aseguramos de que los datos sean recientes y relevantes.
+📢 **Nuestro modelo solo se entrenará con datos de los últimos 5 años (2017-2022).**<br>
+🔹 Evita incluir negocios antiguos cuyo comportamiento puede no ser representativo.<br>
+🔹 Nos aseguramos de que los datos sean recientes y relevantes.<br>
 
 ### 🛠️ **Stack Tecnologico**
 
@@ -82,48 +82,49 @@ Desarrollar un sistema de recomendación que, basado en datos de negocios gastro
 
 ✅ **Almacenamiento de Datos**
 
-🔹 Local (CSV, Parquet)
-  **Ventajas:**
-  ✔️ Fácil de manejar y compartir.
-  ✔️ Compatible con la mayoría de herramientas de análisis de datos.
-  ✔️ Parquet ofrece mayor eficiencia en almacenamiento y rendimiento para grandes volúmenes de datos.
+🔹 Local (CSV, Parquet)<br>
+  **Ventajas:**<br>
+  ✔️ Fácil de manejar y compartir.<br>
+  ✔️ Compatible con la mayoría de herramientas de análisis de datos.<br>
+  ✔️ Parquet ofrece mayor eficiencia en almacenamiento y rendimiento para grandes volúmenes de datos.<br>
 
-🔹 **Google Cloud Storage**
-  **Ventajas:**
-  ✔️ Escalabilidad y alta disponibilidad.
-  ✔️ Integración con Google BigQuery, Spark y otras herramientas.
-  ✔️ Seguridad avanzada con control de acceso y encriptación.
+🔹 **Google Cloud Storage**<br>
+  **Ventajas:**<br>
+  ✔️ Escalabilidad y alta disponibilidad.<br>
+  ✔️ Integración con Google BigQuery, Spark y otras herramientas.<br>
+  ✔️ Seguridad avanzada con control de acceso y encriptación.<br>
 
-✅ **Procesamiento y Análisis**
-🔹 **Python (Pandas, NumPy, Scikit-learn)**
-  **Ventajas:**
-  ✔️ Comunidad activa y bien documentada.
-  ✔️ Alto rendimiento en procesamiento de datos.
-  ✔️ Amplia compatibilidad con otros frameworks de ML y visualización.
+✅ **Procesamiento y Análisis**<br>
+🔹 **Python (Pandas, NumPy, Scikit-learn)**<br>
+  **Ventajas:**<br>
+  ✔️ Comunidad activa y bien documentada.<br>
+  ✔️ Alto rendimiento en procesamiento de datos.<br>
+  ✔️ Amplia compatibilidad con otros frameworks de ML y visualización.<br>
 
-🔹 **EDA y Visualización:** Seaborn, Matplotlib
-  **Ventajas:**
-  ✔️ Exploración rápida de patrones en los datos.
-  ✔️ Personalización avanzada de gráficos.
-  ✔️ Integración con Pandas para visualización directa de DataFrames.
+🔹 **EDA y Visualización:** Seaborn, Matplotlib<br>
+  **Ventajas:**<br>
+  ✔️ Exploración rápida de patrones en los datos.<br>
+  ✔️ Personalización avanzada de gráficos.<br>
+  ✔️ Integración con Pandas para visualización directa de DataFrames.<br>
 
-🔹 **ML Models:** Random Forest, XGBoost, Regresión Logística
-  **Ventajas:**
-  ✔️ Modelos interpretables y eficientes.
-  ✔️ Adaptabilidad a distintos tipos de datos.
-  ✔️ XGBoost ofrece gran rendimiento en grandes volúmenes de datos.
+🔹 **ML Models:** Random Forest, XGBoost, Regresión Logística<br>
+  **Ventajas:**<br>
+  ✔️ Modelos interpretables y eficientes.<br>
+  ✔️ Adaptabilidad a distintos tipos de datos.<br>
+  ✔️ XGBoost ofrece gran rendimiento en grandes volúmenes de datos.<br>
 
-✅ **Despliegue**
-🔹 Dashboard en **PowerBI**
-  **Ventajas:**
-  ✔️ Visualizaciones dinámicas y personalizables.
-  ✔️ Integración con diversas fuentes de datos.
-  ✔️ Facilidad de uso para usuarios sin conocimientos técnicos avanzados.
-🔹  API en **FastAPI** para consultas en tiempo real
-  **Ventajas:**
-  ✔️ Rápido y eficiente gracias a su compatibilidad con ASGI.
-  ✔️ Documentación automática con Swagger UI.
-  ✔️ Fácil integración con bases de datos y modelos de machine learning.
+✅ **Despliegue**<br>
+🔹 Dashboard en **PowerBI**<br>
+  **Ventajas:**<br>
+  ✔️ Visualizaciones dinámicas y personalizables.<br>
+  ✔️ Integración con diversas fuentes de datos.<br>
+  ✔️ Facilidad de uso para usuarios sin conocimientos técnicos avanzados.<br>
+
+🔹  API en **FastAPI** para consultas en tiempo real<br>
+  **Ventajas:**<br>
+  ✔️ Rápido y eficiente gracias a su compatibilidad con ASGI.<br>
+  ✔️ Documentación automática con Swagger UI.<br>
+  ✔️ Fácil integración con bases de datos y modelos de machine learning.<br>
 
 ## **KPIs**
 
@@ -139,9 +140,9 @@ Este KPI medirá la evolución en la calificación promedio del negociogastronó
 
 📌 **Leyenda:**
 
-* **TCC**: Tasa de Crecimiento de Calificaciones.
-* **CP_T**: Calificación promedio en el último trimestre.
-* **CP_T-1**: Calificación promedio en el trimestre anterior.
+* **TCC**: Tasa de Crecimiento de Calificaciones.<br>
+* **CP_T**: Calificación promedio en el último trimestre.<br>
+* **CP_T-1**: Calificación promedio en el trimestre anterior.<br>
 
 ### 2️⃣ **Tasa de Crecimiento de Reviews**
 
@@ -155,9 +156,9 @@ Este KPI medirá la evolución de la popularidad del nuevo negocio gastronómico
 
 📌 **Leyenda:**
 
-* **TCR**: Tasa de Crecimiento de Reviews ajustada al objetivo del 5%.
-* **R_t**: Cantidad de reseñas en el trimestre actual.
-* **R_t-1**: Cantidad de reseñas en el trimestre anterior.
+* **TCR**: Tasa de Crecimiento de Reviews ajustada al objetivo del 5%.<br>
+* **R_t**: Cantidad de reseñas en el trimestre actual.<br>
+* **R_t-1**: Cantidad de reseñas en el trimestre anterior.<br>
 
 ### 3️⃣ **Indice de repeticion de clientes**
 
@@ -171,9 +172,9 @@ Este KPI medirá la satisfacción de los clientes a partir de si regresan o no a
 
 📌 **Leyenda:**
 
-* **ICR**: Índice de Repetición de Clientes ajustado al objetivo del 10%.
-* **C_r**: Número de clientes que repiten en el trimestre actual.
-* **C_t**: Número total de clientes en el trimestre actual.
+* **ICR**: Índice de Repetición de Clientes ajustado al objetivo del 10%.<br>
+* **C_r**: Número de clientes que repiten en el trimestre actual.<br>
+* **C_t**: Número total de clientes en el trimestre actual.<br>
 
 ## **Metodología de Trabajo**
 
@@ -181,11 +182,11 @@ Este KPI medirá la satisfacción de los clientes a partir de si regresan o no a
 
 ### **👥 Roles del Equipo**
 
-✅ **Scrum Master:** Argenis Bolivar
-✅ **Data Engineer:** Paula Irazoqui
-✅ **Data Analyst:** Sebastián Prat
-✅ **ML Engineer:** Ezequiel Lizio
-✅ **DevOps:** Joaquin Rubiolo
+✅ **Proyect Manager:** Argenis Bolivar<br>
+✅ **Data Engineer:** Paula Irazoqui<br>
+✅ **Data Analyst:** Sebastián Prat<br>
+✅ **ML Engineer:** Ezequiel Lizio<br>
+✅ **DevOps:** Joaquin Rubiolo<br>
 
 ### **📌 Roles en cada Sprint**
 
@@ -199,11 +200,11 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 
 #### **1️⃣ Épicas Principales**
 
-1. **Definición del Proyecto y Exploración de Datos**
-2. **Implementación del Pipeline ETL y Almacenamiento**
-3. **Desarrollo del Modelo de Machine Learning**
-4. **Implementación del Dashboard Interactivo**
-5. **Optimización y Validación del Sistema**
+1. **Definición del Proyecto y Exploración de Datos**<br>
+2. **Implementación del Pipeline ETL y Almacenamiento**<br>
+3. **Desarrollo del Modelo de Machine Learning**<br>
+4. **Implementación del Dashboard Interactivo**<br>
+5. **Optimización y Validación del Sistema**<br>
 
 #### **2️⃣ Historias de Usuario por Sprint**
 
@@ -234,86 +235,86 @@ Para distribuir responsabilidades, los roles clave en cada sprint son:
 **HU4:** *Como ingeniero de datos, quiero implementar un pipeline ETL automatizado para garantizar la limpieza y transformación de los datos.*
 
 * **Tareas:**
-  ✅ Diseñar el flujo de extracción, transformación y carga (ETL).
-  ✅ Configurar un Data Warehouse / Data Lake.
-  ✅ Implementar una carga incremental para nuevos datos.
+  ✅ Diseñar el flujo de extracción, transformación y carga (ETL).<br>
+  ✅ Configurar un Data Warehouse / Data Lake.<br>
+  ✅ Implementar una carga incremental para nuevos datos.<br>
 
 **HU5:** *Como arquitecto de datos, quiero diseñar un modelo relacional para almacenar la información de manera eficiente.*
 
 * **Tareas:**
-  ✅ Crear un modelo de base de datos (ERD).
-  ✅ Implementar PostgreSQL o BigQuery para almacenamiento.
-  ✅ Validar la integridad de los datos mediante consultas SQL.
+  ✅ Crear un modelo de base de datos (ERD).<br>
+  ✅ Implementar PostgreSQL o BigQuery para almacenamiento.<br>
+  ✅ Validar la integridad de los datos mediante consultas SQL.<br>
 
 **HU6:** *Como ingeniero de datos, quiero realizar pruebas de calidad para asegurar que los datos son confiables.*
 
 * **Tareas:**
-  ✅ Implementar validaciones de datos en Airflow o Prefect.
-  ✅ Generar reportes de calidad de datos.
-  ✅ Resolver problemas de datos faltantes o inconsistentes.
+  ✅ Implementar validaciones de datos en Airflow o Prefect.<br>
+  ✅ Generar reportes de calidad de datos.<br>
+  ✅ Resolver problemas de datos faltantes o inconsistentes.<br>
 
 ##### **📌 Sprint 3: Data Analytics + ML (3 Mar - 15 Mar)**
 
 **HU7:** *Como analista de datos, quiero visualizar las recomendaciones del modelo en un dashboard interactivo.*
 
 * **Tareas:**
-  ✅ Implementar gráficos de visualización de KPIs.
-  ✅ Integrar el dashboard con la base de datos.
-  ✅ Generar filtros interactivos para el análisis de datos.
+  ✅ Implementar gráficos de visualización de KPIs.<br>
+  ✅ Integrar el dashboard con la base de datos.<br>
+  ✅ Generar filtros interactivos para el análisis de datos.<br>
 
 **HU8:** *Como desarrollador de machine learning, quiero entrenar un modelo de recomendación basado en datos históricos.*
 
 * **Tareas:**
-  ✅ Seleccionar el algoritmo de ML más adecuado (clustering, regresión, etc.).
-  ✅ Optimizar el modelo con hiperparámetros.
-  ✅ Evaluar su rendimiento con métricas de precisión y recall.
+  ✅ Seleccionar el algoritmo de ML más adecuado (clustering, regresión, etc.).<br>
+  ✅ Optimizar el modelo con hiperparámetros.<br>
+  ✅ Evaluar su rendimiento con métricas de precisión y recall.<br>
 
 **HU9:** *Como DevOps, quiero desplegar el modelo en producción para que pueda ser utilizado en tiempo real.*
 
 * **Tareas:**
-  ✅ Crear API con **FastAPI** para consumir el modelo.
-  ✅ Integrar el modelo con el dashboard para visualización en tiempo real.
-  ✅ Probar la API con datos de prueba y optimizar tiempos de respuesta.
+  ✅ Crear API con **FastAPI** para consumir el modelo.<br>
+  ✅ Integrar el modelo con el dashboard para visualización en tiempo real.<br>
+  ✅ Probar la API con datos de prueba y optimizar tiempos de respuesta.<br>
 
 ---
 
 #### **3️⃣ Backlog Técnico (Tareas Prioritarias)**
 
-✅ **Sprint 1: Definición y Exploración de Datos**
+✅ **Sprint 1: Definición y Exploración de Datos**<br>
 
-* Configurar repositorio en **GitHub** con estructura de carpetas.
-* Realizar EDA.
-* Documentar las fuentes de datos y su confiabilidad.
+* Configurar repositorio en **GitHub** con estructura de carpetas.<br>
+* Realizar EDA.<br>
+* Documentar las fuentes de datos y su confiabilidad.<br>
 
 🏆 **Hitos:**
 
-* Documentación del EDA y calidad de datos.
-* Definición de KPIs.
-* Creación del repositorio en GitHub.
+* Documentación del EDA y calidad de datos.<br>
+* Definición de KPIs.<br>
+* Creación del repositorio en GitHub.<br>
 
 ✅ **Sprint 2: Data Engineering**
 
-* Configurar **Airflow** o **Prefect** para orquestación del ETL.
-* Implementar almacenamiento en  **Google BigQuery** .
-* Generar logs de procesamiento y validación de datos.
+* Configurar **Airflow** o **Prefect** para orquestación del ETL.<br>
+* Implementar almacenamiento en  **Google BigQuery**.<br>
+* Generar logs de procesamiento y validación de datos.<br>
 
 🏆 **Hitos:**
 
-* Implementación del Data Lake y Data Warehouse.
-* Pipeline ETL en funcionamiento.
-* Validación de datos y reportes de calidad.
+* Implementación del Data Lake y Data Warehouse.<br>
+* Pipeline ETL en funcionamiento.<br>
+* Validación de datos y reportes de calidad.<br>
 
 ✅ **Sprint 3: Data Analytics + ML**
 
-* Conectar el dashboard con la base de datos.
-* Entrenar y desplegar el modelo de Machine Learning.
-* Evaluar el sistema con datos en tiempo real.
+* Conectar el dashboard con la base de datos.<br>
+* Entrenar y desplegar el modelo de Machine Learning.<br>
+* Evaluar el sistema con datos en tiempo real.<br>
 
 🏆 **Hitos:**
 
-* Dashboard funcional con visualización de KPIs.
-* Modelo de ML entrenado y optimizado.
-* Despliegue del modelo en la nube.
+* Dashboard funcional con visualización de KPIs.<br>
+* Modelo de ML entrenado y optimizado.<br>
+* Despliegue del modelo en la nube.<br>
 
 #### 4️⃣ Diagrama de Gantt
 
