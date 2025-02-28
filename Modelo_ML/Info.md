@@ -11,9 +11,11 @@ Donde:
 - $P_h = \frac{n_h}{n_R}$
 
 - $P_r = \frac{1}{n_R} \sum_{i=0}^{n_R - 1} P_{r,i}$
+  
   $P_{r,i} = \frac{n_{rp,i}}{n_{rn,i}} \cdot n_{r,i}$
 
 - $P_c = \frac{1}{n_R} \sum_{i=0}^{n_R - 1} P_{c,i}$
+  
   $P_{c,i} = C_i \cdot n_{r,i}$
 
 ### Definiciones
