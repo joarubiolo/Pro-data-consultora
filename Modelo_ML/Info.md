@@ -23,10 +23,12 @@ Donde las variables son:
   Esta variable surje de un análisis de las calificaciones de cada restaurante (de la categoría correspondiente) en cada ciudad.
 
 - La función $f$ es una conjunción de función que escalan las variables $P_h$ , $\frac{1}{P_c}$ y $\frac{1}{P_r}$ entre 0 y 1 para que puedan ser comparables entre si.
-- Las constantes $a$, $b$ y $c$ son los pesos de cada término en la magnitud final $\phi$. Estan allí para poder darle distintas importancias a las desitintas variables. En principio de le dio los valores $a=1$, $b=2$ y $c=2.5$ para darle mas peso a la calidad de la competencia y no tanto a la cantidad. 
+- Las constantes $a$, $b$ y $c$ son los pesos de cada término en la magnitud final $\phi$. Estan allí para poder darle distintas importancias a las desitintas variables. En principio de le dio los valores $a=1$, $b=2$ y $c=2.5$ para darle mas peso a la calidad de la competencia y no tanto a la cantidad.
 
-### Definiciones
+El cálculo de las variables $P_r$ y $P_c$ es un promedio ponderado con el número de reviews para dale mas peso a los restaurantes con mas reviews. 
 
+### Definiciones  
+ 
 - $n_h$ : Número de habitantes de la ciudad.
 - $n_R$ : Número de restaurantes en la ciudad.
 - $n_{rp,i}$ : Número de reseñas positivas del $i$-ésimo restaurante de la ciudad.
@@ -38,7 +40,7 @@ Donde las variables son:
 
 El end point de la API en `main.py` utiliza el archivo `metadatos_ML.csv` (unificación de los archivos con info de los restaurantes y los de las reviews de estos), que contiene el análisis de sentimiento de las reviews, clasificándolas como reviews buenas o malas. El problema a la hora de armar `metadatos_ML.csv` (ver en `EntrenamientoML.ipynb`) es que no todos los negocios tienen reviews. Por lo que, a la hora de unificar los dataframes de negocios y de reviews, esto dejó entradas vacías en las columnas relacionadas con el número de reviews positivas y negativas. Para corregir esto se buscó la distribución que mejor ajustara las entradas no vacías de las columnas y luego se rellenó los vacíos con valores aleatorios que siguieran estas distribuciones (ver en `EntrenamientoML.ipynb`). 
 
-Con toda esta información la función del end point calcula, luego de filtrar `metadatos_ML.csv` por una categoría en particular (variable de ingreso por el usuario), las variables $P_{r,i}$ y $P_{c,i}$. Con estas se calculó también una variable $d.P_{r,i}+e.P_{c,i}$ ( $d=1$ y $e=c/b=1.25$ ) que servirá para calificar a un restaurant tomando en cuenta su clasificación y el análisis de sus reviews. Con esto puede destacaar los mejores restoranes de esa categoría y extraer una lista con los atributos más importantes de estos. 
+Con toda esta información la función del end point calcula, luego de filtrar `metadatos_ML.csv` por una categoría en particular (variable de ingreso por el usuario), las variables $P_{r,i}$ y $P_{c,i}$. Con estas se calculó también una variable $d \cdot P_{r,i}+e \cdot P_{c,i}$ ( $d=1$ y $e=c/b=1.25$ ) que servirá para calificar a un restaurant tomando en cuenta su clasificación y el análisis de sus reviews. Con esto puede destacaar los mejores restoranes de esa categoría y extraer una lista con los atributos más importantes de estos. 
 
 Con esto hecho, la función utiliza el modelo entrenado `Modelo_entrenado.h5` para calcular la variable $\phi$ y dar una lista de las ciudades mejor calificadas teniendo en cuenta la competencia y la calidad de esta si quieramos poner un nuevo restaurant allí dentro de la categoría ingresada. 
 
