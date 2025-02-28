@@ -16,9 +16,9 @@ Donde:
 
 ### Definiciones
 
-- $n_h :$ Número de habitantes de la ciudad.
-- $n_R :$ Número de restaurantes en la ciudad.
-- $n_{rp,i} :$ Número de reseñas positivas del $i$-ésimo restaurante de la ciudad.
-- $n_{rn,i} :$ Número de reseñas negativas del $i$-ésimo restaurante de la ciudad.
-- $n_{r,i} :$ Número total de reseñas del $i$-ésimo restaurante de la ciudad.
-- $C_i :$ Calificación del $i$-ésimo restaurante.
+- $n_h$ : Número de habitantes de la ciudad.
+- $n_R$ : Número de restaurantes en la ciudad.
+- $n_{rp,i}$ : Número de reseñas positivas del $i$-ésimo restaurante de la ciudad.
+- $n_{rn,i}$ : Número de reseñas negativas del $i$-ésimo restaurante de la ciudad.
+- $n_{r,i}$ : Número total de reseñas del $i$-ésimo restaurante de la ciudad.
+- $C_i$ : Calificación del $i$-ésimo restaurante.
