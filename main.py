@@ -4,10 +4,10 @@ from tensorflow.keras.models import load_model
 from fastapi import FastAPI, HTTPException
 
 
-modelo = load_model('Modelo_entrenado.h5')
-metadatos=pd.read_csv("metadatos_ML.csv")
-categorias=pd.read_csv('categories_normalized.csv')
-ciudades=pd.read_csv('ciudades_normal.csv')
+modelo = load_model('./Modelo_ML/Modelo_entrenado.h5')
+metadatos=pd.read_csv("./Modelo_ML/metadatos_ML.csv")
+categorias=pd.read_csv('./Modelo_ML/categories_normalized.csv')
+ciudades=pd.read_csv('./Modelo_ML/ciudades_normal.csv')
 
 app = FastAPI()
 
