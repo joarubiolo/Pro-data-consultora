@@ -1,10 +1,10 @@
-# Descripción del Modelo
+# Modelo de Recomendación
 
-La fórmula que describe el modelo es la siguiente:
+La ecuación que describe el modelo es la siguiente:
 
-\[
+$$
 \phi = a \cdot f(P_h) + b \cdot f\left(\frac{1}{P_c}\right) + c \cdot f\left(\frac{1}{P_r}\right)
-\]
+$$
 
 Donde:
 
