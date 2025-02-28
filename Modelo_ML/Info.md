@@ -22,7 +22,7 @@ Donde las variables son:
 
   Esta variable surje de un análisis de las calificaciones de cada restaurante (de la categoría correspondiente) en cada ciudad.
 
-- La función $f$ es una conjunción de función que escalan las variables $P_h$, $\frac{1}{P_c}$ y $\frac{1}{P_r}$ entre 0 y 1 para que puedan ser comparables entre si.
+- La función $f$ es una conjunción de función que escalan las variables $P_h$ , $\frac{1}{P_c}$ y $\frac{1}{P_r}$ entre 0 y 1 para que puedan ser comparables entre si.
 - Las constantes $a$, $b$ y $c$ son los pesos de cada término en la magnitud final $\phi$. Estan allí para poder darle distintas importancias a las desitintas variables. En principio de le dio los valores $a=1$, $b=2$ y $c=2.5$ para darle mas peso a la calidad de la competencia y no tanto a la cantidad. 
 
 ### Definiciones
