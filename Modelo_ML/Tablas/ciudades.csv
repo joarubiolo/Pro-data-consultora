@@ -1,0 +1,885 @@
+city_id,city,population
+1,Jacksonville,985843
+2,Miami,455924
+3,Tampa,403364
+4,Orlando,320742
+5,St. Petersburg,263553
+6,Port St. Lucie,245021
+7,Cape Coral,224455
+8,Hialeah,221300
+9,Tallahassee,202221
+10,Fort Lauderdale,184255
+11,Pembroke Pines,171119
+12,Hollywood,153859
+13,Gainesville,145812
+14,Miramar,138319
+15,Palm Bay,135566
+16,Coral Springs,134906
+17,Lehigh Acres,127391
+18,West Palm Beach,124130
+19,Lakeland,122264
+20,Spring Hill,118814
+21,Clearwater,116850
+22,Brandon,116365
+23,Pompano Beach,113619
+24,Miami Gardens,110717
+25,Davie,107799
+26,Riverview,107776
+27,Palm Coast,102113
+28,Boca Raton,99974
+29,Deltona,98739
+30,Fort Myers,97372
+31,Sunrise,96808
+32,Plantation City,96548
+33,Alafaya,90874
+34,North Port,88934
+35,Deerfield Beach,87325
+36,Melbourne,86960
+37,Town 'N' Country,86544
+38,Daytona Beach,82485
+39,Pine Hills,82264
+40,Largo,82248
+41,The Villages,82108
+42,Homestead,81659
+43,Kissimmee,81269
+44,Boynton Beach,81267
+45,Miami Beach,79607
+46,Doral,79359
+47,Kendall,78527
+48,Lauderhill,73974
+49,Tamarac,72372
+50,Wesley Chapel,71965
+51,Poinciana,71665
+52,Ocala,68426
+53,Weston,68181
+54,Delray Beach,67536
+55,St. Cloud,66448
+56,Port Orange,65966
+57,Sanford,65394
+58,Port Charlotte,64971
+59,Horizon West,62152
+60,Wellington,61634
+61,Palm Harbor,61454
+62,Jupiter,61291
+63,Palm Beach Gardens,61146
+64,Four Corners,60443
+65,Apopka,59113
+66,North Miami,59008
+67,Margate,58593
+68,The Hammocks,58548
+69,Coconut Creek,57694
+70,Sarasota,57602
+71,Winter Haven,57109
+72,Bradenton,57076
+73,Fountainebleau,56453
+74,Bonita Springs,56229
+75,Pensacola,53724
+76,Pinellas Park,53456
+77,Westchester,53082
+78,Kendale Lakes,52141
+79,Tamiami,51201
+80,Country Club,51000
+81,Titusville,49680
+82,Fort Pierce,49374
+83,Ocoee,49261
+84,University Cdp,48868
+85,Clermont,48621
+86,Coral Gables,48353
+87,Winter Garden,47294
+88,Altamonte Springs,45257
+89,North Lauderdale,44784
+90,Ormond Beach,44277
+91,North Fort Myers,44189
+92,Oakland Park,44105
+93,Greenacres,44103
+94,Cutler Bay,43762
+95,Lake Worth Beach,43346
+96,Deland,43009
+97,North Miami Beach,42789
+99,Land O' Lakes,41845
+100,Hallandale Beach,41547
+101,Princeton,41476
+102,Oviedo,41231
+103,Meadow Woods,40741
+104,Plant City,40571
+105,The Acreage,40188
+106,Royal Palm Beach,39489
+107,Lakewood Ranch,39434
+108,Navarre,38988
+109,Winter Springs,38941
+110,Valrico,38820
+111,Aventura,38741
+112,Riviera Beach,38663
+113,Parkland,37911
+114,Estero,37908
+115,South Miami Heights,37525
+116,Haines City,37272
+117,Lauderdale Lakes,36035
+118,Richmond West,35988
+119,Dunedin,35930
+120,Egypt Lake-Leto,35709
+121,Panama City,35660
+122,Carrollwood,35645
+123,Fruit Cove,35609
+124,Kendall West,35492
+125,Golden Glades,35042
+126,Merritt Island,34718
+127,Cooper City,34321
+128,West Little River,33147
+129,East Lake,33019
+130,New Smyrna Beach,32655
+131,Buenaventura Lakes,32310
+132,Dania Beach,31915
+133,Sun City Center,31801
+134,Lake Magdalene,31733
+135,Leesburg,31721
+136,Lakeside,31548
+137,Miami Lakes,31238
+138,Oakleaf Plantation,30737
+139,Casselberry,30595
+140,Ferry Pass,30467
+141,Ruskin,30074
+142,Winter Park,29894
+143,Rockledge,29452
+144,Vero Beach South,29365
+145,Fleming Island,29351
+146,Crestview,29300
+147,West Melbourne,29144
+148,East Lake-Orient Park,29064
+149,Golden Gate,28767
+150,Apollo Beach,28347
+151,Citrus Park,28163
+152,Venice,28150
+153,Silver Springs Shores,27556
+154,Wright,27233
+155,Palm Springs,27132
+156,Temple Terrace,26972
+157,Leisure City,26917
+158,Sebastian,26846
+159,Lutz,26731
+160,Keystone,26723
+161,Palm River-Clair Mel,26719
+162,Ives Estates,26154
+163,Fish Hawk,25945
+164,Tarpon Springs,25872
+165,Palm City,25699
+166,Pace,25630
+167,Immokalee,25624
+168,South Bradenton,25585
+169,Nocatee,25581
+170,Northdale,25420
+171,Key West,25103
+172,Bellview,25051
+173,Westchase,24818
+174,Port St. John,24617
+175,World Golf Village,24485
+176,Eustis,24457
+177,Oak Ridge,24395
+178,Palmetto Bay,24264
+179,Liberty Triangle,24178
+180,Wekiwa Springs,24109
+181,Coral Terrace,24051
+182,Bloomingdale,23979
+183,Bayonet Point,23787
+184,Edgewater,23636
+185,Groveland,23628
+186,Jacksonville Beach,23447
+187,Brent,23441
+188,Debary,23209
+189,Jasmine Estates,23151
+190,Ensley,23036
+191,The Crossings,22359
+192,Marion Oaks,22296
+193,Hialeah Gardens,22286
+194,Sunny Isles Beach,21885
+195,Holiday,21768
+196,Florida Ridge,21517
+197,Hunters Creek,21255
+198,Tavares,21061
+199,Lealman,21026
+200,Fort Walton Beach,20925
+201,Zephyrhills,20883
+202,Midway Cdp,20745
+203,West Pensacola,20679
+204,Bartow,20584
+205,Lynn Haven,20501
+206,Sweetwater,20352
+207,Punta Gorda,20227
+208,Auburndale,20011
+209,Cocoa,19930
+210,Palm Valley,19775
+211,Naples,19704
+212,Bradfordville,19548
+213,Stuart,19430
+214,Panama City Beach,19393
+215,Englewood,19385
+216,Trinity,19296
+217,Seminole,19252
+218,Maitland,19215
+219,Gibsonton,18831
+220,Country Walk,18693
+221,Wildwood,18636
+222,Glenvar Heights,18488
+223,Bayshore Gardens,18324
+224,San Carlos Park,18252
+225,Pinecrest,18051
+226,Minneola,18001
+227,Mount Dora,17756
+228,New Port Richey,17708
+229,Pinewood,17427
+230,South Venice,17399
+231,Vero Beach,17317
+232,Lake Butler Cdp,17242
+233,Viera West,17169
+234,Upper Grand Lagoon,17162
+235,Ojus,17101
+236,Lady Lake,16967
+237,Safety Harbor,16955
+238,Belle Glade,16840
+239,Longwood,16794
+240,Lake Mary,16709
+241,Lake Wales,16681
+242,Myrtle Grove,16637
+243,Palmetto Estates,16587
+244,Niceville,16490
+245,Three Lakes,16426
+246,Brownsville,16391
+247,Marco Island,16210
+248,Azalea Park,16110
+249,Warrington,15935
+250,Palmer Ranch,15873
+251,Fruitville,15828
+252,Opa-Locka,15794
+253,St. Augustine,15596
+254,West Lealman,15560
+255,Yulee,15521
+256,Homosassa Springs,15465
+257,West Park,15109
+258,Davenport,15068
+259,Orange City,14928
+260,Forest City,14871
+261,Oldsmar,14831
+262,Lockhart,14753
+263,Thonotosassa,14660
+264,Gladeview,14657
+265,Naranja,14610
+266,Key Biscayne,14414
+267,Hobe Sound,14313
+268,Iona,14290
+269,East Milton,14280
+270,Destin,14188
+271,Southchase,14149
+272,Lakewood Park,14077
+273,Bellair-Meadowbrook Terrace,13887
+274,Elfers,13877
+275,Gonzalez,13861
+276,South Daytona,13781
+277,On Top Of The World,13772
+278,Cheval,13694
+279,Callaway,13661
+280,Sunset,13652
+281,Fernandina Beach,13647
+282,Villas,13578
+283,Palmetto,13577
+284,Asbury Lake,13465
+285,Jupiter Farms,13394
+286,Conway,13346
+287,Miami Springs,13325
+288,Atlantic Beach,13182
+289,Olympia Heights,13179
+290,Celebration,13150
+291,Cypress Lake,13145
+292,North Palm Beach,13095
+293,Viera East,13082
+294,Holly Hill,13075
+295,Mango,13037
+296,Wimauma,13003
+297,Pasadena Hills,12848
+298,Highland City,12732
+299,Sarasota Springs,12669
+300,Goldenrod,12603
+301,Lake City,12602
+302,Florida City,12582
+303,Doctor Phillips,12458
+304,Jensen Beach,12456
+305,Lantana,12086
+306,South Miami,12073
+307,Key Largo,12069
+308,Goulds,12019
+309,Shady Hills,12012
+310,Middleburg,11911
+311,Laurel,11868
+312,Westview,11823
+313,Medulla,11712
+314,Lakeland Highlands,11669
+315,Gulfport,11655
+316,Sebring,11563
+317,Miami Shores,11530
+318,New Port Richey East,11485
+319,Citrus Springs,11469
+320,Wilton Manors,11403
+321,Cocoa Beach,11389
+322,Satellite Beach,11343
+323,Union Park,11111
+324,Fairview Shores,11064
+327,Hudson,10873
+328,Sugarmill Woods,10871
+329,West Vero Corridor,10802
+330,Bithlo,10790
+331,Alachua,10770
+332,Westwood Lakes,10768
+333,Palatka,10730
+334,Pebble Creek,10719
+335,Fuller Heights,10697
+336,Pine Ridge Cdp,10676
+337,Memphis,10626
+338,Lighthouse Point,10501
+339,Pine Castle,10429
+340,Progress Village,10378
+341,Rotonda,10312
+342,Avon Park,10219
+343,Green Cove Springs,10130
+344,Bardmoor,10095
+345,Cape Canaveral,10014
+346,Cypress Gardens,10013
+347,West Perrine,9944
+350,Marathon,9849
+351,Brooksville,9789
+352,Beverly Hills,9716
+353,Gateway,9603
+354,Richmond Heights,9489
+355,Palm Beach,9258
+356,Orange Park,9064
+357,Micco,9053
+358,Citrus Hills,9044
+359,Indian Harbour Beach,9019
+360,Lake Park,8984
+361,North Merritt Island,8903
+362,Hernando,8795
+363,Fruitland Park,8765
+364,St. Pete Beach,8732
+365,Dade City,8646
+366,Fern Park,8593
+367,Miramar Beach,8587
+368,Wedgefield,8556
+369,Mascotte,8536
+370,Seffner,8498
+371,Westgate,8369
+372,Gulf Gate,8317
+373,Lely Resort,8296
+374,Springfield,8255
+375,Mcgregor,8198
+376,Odessa,8170
+377,Macclenny,8027
+378,Newberry,8010
+379,North Weeki Wachee,7967
+380,North Bay Village,7930
+381,Quincy,7913
+382,Inverness,7857
+383,Arcadia,7846
+384,Broadview Park,7802
+385,Sky Lake,7728
+386,Beacon Square,7643
+387,Southwest Ranches,7566
+388,Loughman,7535
+389,Longboat Key,7488
+390,Inverness Highlands South,7478
+391,South Apopka,7425
+392,Williamsburg,7400
+393,Lake Alfred,7355
+394,Indian River Estates,7331
+395,Willow Oak,7299
+396,Marianna,7294
+397,Mims,7282
+398,Perry,7281
+399,West Samoset,7273
+400,Southeast Arcadia,7247
+401,Clewiston,7238
+402,Lake Lorraine,7210
+403,Belle Isle,7171
+404,Connerton,7159
+405,Inwood,7098
+406,Live Oak,7093
+407,Heathrow,7033
+408,Fort Pierce North,7023
+409,"Islamorada, Village Of Islands",6988
+410,Neptune Beach,6984
+411,Ormond-By-The-Sea,6962
+412,West Miami,6944
+413,Lecanto,6929
+414,Orlovista,6928
+415,Port Labelle,6856
+416,Ave Maria,6826
+417,Gulf Breeze,6823
+418,St. Augustine Beach,6779
+419,Freeport,6778
+420,Defuniak Springs,6764
+421,Indiantown,6755
+422,South Patrick Shores,6726
+423,High Springs,6648
+424,Pelican Bay,6575
+425,Kathleen,6527
+426,Treasure Island,6522
+427,Ocean City,6480
+428,River Park,6415
+429,Sanibel,6328
+430,Pembroke Park,6300
+431,Vero Lake Estates,6262
+432,Lauderdale-By-The-Sea,6154
+433,Tequesta,6134
+434,Southgate,6054
+435,Dundee,6043
+436,Three Oaks,6037
+437,Westlake,5999
+438,Fort Myers Shores,5966
+439,Starke,5937
+440,Crawfordville,5892
+441,Jan Phyl Village,5798
+442,Lochmoor Waterway Estates,5791
+443,Osprey,5790
+446,Siesta Key,5690
+447,Bay Harbor Islands,5679
+448,Okeechobee,5602
+449,Pahokee,5553
+450,Flagler Beach,5541
+451,Surfside,5472
+452,Floral City,5467
+453,The Meadows,5463
+454,South Gate Ridge,5456
+455,Ellenton,5454
+456,Zephyrhills South,5422
+457,Cocoa West,5416
+458,Rio Pinar,5396
+461,White City,5373
+462,Balm,5362
+463,Cortez,5323
+464,Whiskey Creek,5298
+465,Palm Springs North,5291
+466,South Pasadena,5288
+467,Fort Meade,5270
+468,Naples Manor,5262
+469,Fort Myers Beach,5251
+470,Rainbow Springs,5226
+471,Labelle,5222
+472,Crystal Lake,5203
+473,Daytona Beach Shores,5194
+474,River Ridge,5191
+475,Samsula-Spruce Creek,5174
+476,Fussels Corner,5113
+477,Ridge Wood Heights,5085
+478,Grant-Valkaria,5045
+479,Valparaiso,5029
+482,Pensacola Station,4993
+483,Fellsmere,4982
+484,Kenneth City,4975
+485,Wauchula,4943
+486,South Sarasota,4905
+487,St. Augustine South,4864
+488,South Bay,4861
+489,June Park,4852
+490,South Brooksville,4835
+491,Timber Pines,4790
+492,Brookridge,4788
+495,Nassau Village-Ratliff,4749
+496,Whitfield Cdp,4745
+497,Sawgrass,4734
+498,Stock Island,4724
+499,Butler Beach,4723
+500,Mount Plymouth,4688
+501,Fort Pierce South,4686
+502,Gifford,4658
+503,Buckingham,4637
+504,Clarcona,4636
+505,Parker,4631
+506,Big Pine Key,4584
+507,Moon Lake,4572
+508,Lake Panasoffkee,4525
+509,Belleair,4495
+510,Taylor Creek,4493
+511,Plantation Cdp,4483
+512,Ridge Manor,4478
+513,Wahneta,4464
+514,Indian River Shores,4458
+515,Charlotte Harbor,4456
+516,Samoset,4433
+517,Florida Gulf Coast University,4416
+518,Laguna Beach,4367
+519,Hutchinson Island South,4350
+520,Mulberry,4346
+521,Lower Grand Lagoon,4305
+522,Bagdad,4285
+523,Highland Beach,4266
+524,Suncoast Estates,4255
+525,Bay Hill,4214
+526,Harbour Heights,4184
+527,Eagle Lake,4169
+528,South Highpoint,4129
+529,Woodville,4109
+530,Mary Esther,4084
+531,North Brooksville,4082
+532,Tierra Verde,4051
+533,West Bradenton,4017
+534,Madeira Beach,3999
+535,Tangerine,3967
+536,Wallace,3965
+539,Pine Manor,3929
+540,Umatilla,3889
+541,Bunnell,3879
+542,Alturas,3866
+543,Juno Beach,3863
+544,St. James City,3846
+545,Lake Sarasota,3802
+546,Port St. Joe,3775
+547,Lely,3770
+548,Point Baker,3757
+549,Hill 'N Dale,3722
+550,Chipley,3718
+551,Watergate,3709
+552,Montura,3678
+553,North River Shores,3655
+554,Indian Rocks Beach,3640
+555,Oakland,3635
+556,High Point,3618
+557,Kensington Park,3561
+558,Lake Clarke Shores,3542
+559,Geneva,3520
+560,Crystal River,3514
+561,Holden Lakes,3506
+562,Port Richey,3485
+563,Vineyards,3484
+564,Midway City,3478
+565,Tiger Point,3453
+566,Loxahatchee Groves,3452
+567,Ponce Inlet,3450
+568,Goulding,3448
+569,Frostproof,3393
+570,Nokomis,3391
+571,Rainbow Lakes Estates,3376
+572,Big Coppitt Key,3333
+573,Woodlawn Beach,3328
+574,Feather Sound,3309
+575,Ridgecrest,3288
+576,Alva,3279
+577,West Deland,3278
+580,Venice Gardens,3246
+581,Zephyrhills North,3243
+582,Williston Highlands,3213
+583,Williston,3201
+584,Bushnell,3196
+585,San Castle,3159
+586,Dover,3157
+587,Malabar,3120
+588,Indialantic,3114
+589,Holden Heights,3108
+590,Windermere,3092
+591,South Beach,3081
+592,Hilliard,3055
+593,Harlem,3050
+594,Dade City North,3049
+595,North Sarasota,3041
+596,Polk City,3028
+597,Holmes Beach,3027
+598,Harbor Bluffs,3020
+599,Madison,3003
+600,Biscayne Park,2993
+601,Chattahoochee,2984
+602,Quail Ridge,2983
+603,Eglin Afb,2975
+604,Bal Harbour,2967
+605,Lake Helen,2964
+606,Sharpes,2948
+607,Verona Walk,2931
+608,Cedar Grove,2911
+609,Olga,2876
+610,Hurlburt Field,2867
+611,Vamo,2845
+612,Bonifay,2825
+613,Hypoluxo,2823
+614,Watertown,2797
+615,Inverness Highlands North,2785
+616,De Leon Springs,2784
+617,Jasper,2762
+618,Edgewood,2737
+619,Island Walk,2724
+620,Monticello,2714
+621,Bay Pines,2700
+622,Cleveland,2690
+623,Silver Springs,2640
+624,St. Leo,2628
+625,Silver Lake,2610
+626,Eastpoint,2602
+627,Holley,2595
+628,Mangonia Park,2586
+629,Tropical Park,2567
+630,Roosevelt Gardens,2566
+631,Lake Belvedere Estates,2532
+632,Hernando Beach,2518
+633,Lake Placid,2514
+634,Pelican Marsh,2513
+635,Berkshire Lakes,2493
+636,Zellwood,2484
+637,Cudjoe Key,2478
+638,Bowling Green,2449
+639,Chiefland,2420
+640,Apalachicola,2412
+641,Pretty Bayou,2405
+642,Carrabelle,2382
+643,Ocala Estates,2347
+644,Greenbriar,2344
+645,Grenelefe,2341
+646,Lake Mary Jane,2323
+647,East Bronson,2303
+648,Belleair Bluffs,2286
+649,Eatonville,2284
+650,Blountstown,2270
+651,Lake Mack-Forest Hills,2267
+652,Virginia Gardens,2260
+653,Manatee Road,2252
+654,Campbell,2247
+655,Vilano Beach,2229
+656,Graceville,2208
+657,Burnt Store Marina,2201
+658,Desoto Lakes,2193
+659,Trenton,2192
+663,Haverhill,2175
+664,Redington Shores,2164
+665,Seminole Manor,2161
+666,Crooked Lake Park,2151
+667,Oriole Beach,2146
+668,Bokeelia,2136
+669,Oak Hill,2128
+670,Atlantis,2107
+671,Tangelo Park,2103
+672,Bear Creek,2091
+673,Roseland,2080
+674,Homosassa,2072
+675,Rainbow Park,2070
+676,Sewall'S Point,2064
+677,Astatula,2053
+678,Grove City,2049
+679,Pine Air,2036
+680,Franklin Park,2018
+681,Lake Butler City,2015
+682,Dunnellon,1990
+683,Hillsboro Beach,1975
+686,Cabana Colony,1930
+687,El Portal,1897
+688,Washington Park,1896
+689,Taft,1867
+690,Ocean Ridge,1841
+691,Charlotte Park,1803
+693,Callahan,1798
+694,Cross City,1790
+695,Lake Kerr,1767
+696,Verandah,1766
+697,Montverde,1763
+698,Century,1758
+699,Sneads,1756
+700,Manasota Key,1741
+701,Havana,1740
+702,Zolfo Springs,1735
+703,Royal Palm Estates,1722
+704,Crescent City,1696
+705,Howey-In-The-Hills,1674
+706,Pine Island Center,1668
+707,Christmas,1665
+708,Moore Haven,1664
+709,Wabasso,1648
+710,Lake Hamilton,1643
+711,North Key Largo,1630
+712,Belleair Beach,1617
+713,Molino,1607
+716,Inglis,1599
+717,Navarre Beach,1583
+718,Malone,1567
+721,Black Diamond,1549
+724,Heritage Pines,1520
+725,Astor,1507
+728,San Antonio,1488
+729,Interlachen,1482
+730,Glencoe,1479
+731,North Redington Beach,1469
+732,South Palm Beach,1458
+733,Lacoochee,1445
+734,Boulevard Gardens,1426
+735,Kenwood Estates,1403
+736,Old Miakka,1398
+737,Fort Denaud,1396
+738,Pine Lakes,1394
+739,Cypress Quarters,1382
+740,Redington Beach,1373
+741,Baldwin,1366
+742,Crystal Springs,1362
+743,Gretna,1352
+744,Yalaha,1343
+745,Homestead Base,1334
+746,Palm Beach Shores,1327
+747,Punta Rassa,1317
+748,Fanning Springs,1307
+749,Rio,1265
+750,Juno Ridge,1260
+751,Bronson,1235
+752,Silver Springs Shores East,1224
+753,St. George Island,1218
+754,Palm Shores,1209
+755,Allentown,1200
+756,Black Hammock,1194
+757,Indian Shores,1192
+758,Gotha,1179
+759,Seville,1165
+760,Five Points,1160
+761,Babson Park,1156
+762,Archer,1154
+763,Mexico Beach,1122
+766,Harlem Heights,1105
+767,North Deland,1096
+768,Weeki Wachee Gardens,1070
+769,Winding Cypress,1053
+770,Deland Southwest,1042
+771,Panacea,1039
+772,Medley,1036
+773,Avalon,1033
+774,Palmona Park,1028
+775,Masaryktown,1023
+776,Anna Maria,1008
+777,Center Hill,1002
+778,Page Park,973
+779,Golden Beach,972
+780,Chumuckla,969
+781,Gulf Stream,968
+782,Indian Lake Estates,956
+783,Solana,953
+784,Paradise Heights,950
+785,Webster,931
+786,Bristol,924
+787,Bradenton Beach,916
+788,Grand Ridge,912
+789,Chokoloskee,911
+790,Crescent Beach,903
+793,Cottondale,868
+794,Garden Grove,858
+795,Gun Club Estates,853
+796,Matlacha,845
+797,Penney Farms,838
+798,Fisher Island,830
+799,Jupiter Island,828
+800,Stacey Street,822
+801,Waldo,818
+802,Pomona Park,812
+803,Lake Kathryn,797
+804,Scottsmoor,791
+805,Greenville,778
+806,Bradley Junction,772
+807,Coleman,771
+812,Paisley,762
+817,Duck Key,755
+818,Heritage Bay,752
+819,Marco Shores-Hammock Bay,746
+820,Vernon,745
+821,Welaka,743
+822,Fort Green Springs,742
+823,Andrews,737
+824,Cedar Key,732
+825,Raleigh,699
+826,Melbourne Village,684
+827,Chaires,676
+828,East Williston,671
+829,Lawtey,670
+830,Micanopy,652
+831,Fort White,648
+832,Paxton,643
+833,Yankeetown,628
+835,Pioneer,612
+838,St. Lucie Village,605
+839,Garcon Point,581
+840,Jay,572
+841,Hillsboro Pines,567
+842,Bell,558
+843,Lake Mystic,556
+844,Greenwood,553
+845,Sea Ranch Lakes,552
+846,Orchid,547
+847,Wiscon,535
+850,Briny Breezes,517
+851,Beverly Beach,516
+852,Mcintosh,508
+853,Gardner,502
+854,Schall Circle,501
+855,Reddick,496
+856,Altha,495
+857,Hampton,488
+858,Glen St. Mary,485
+859,Cinco Bayou,469
+860,Sopchoppy,466
+861,Pinecraft,465
+862,Roeville,460
+863,Greensboro,459
+864,Ferndale,457
+865,Manalapan,429
+866,Jupiter Inlet Colony,426
+867,Lake Hart,425
+868,Lemon Grove,418
+869,Harold,408
+870,Miccosukee,407
+871,Brownsdale,404
+872,Ocean Breeze,402
+873,Worthington Springs,389
+874,Wausau,386
+877,Tyndall Afb,379
+878,Pineland,375
+879,Esto,351
+880,Homeland,348
+881,Munson,344
+882,Spring Ridge,339
+883,Brooker,336
+884,Okahumpka,332
+885,Floridatown,330
+886,Wacissa,328
+887,La Crosse,320
+888,Caryville,315
+889,Yeehaw Junction,314
+890,Capitola,306
+891,St. Marks,305
+894,Windsor,293
+895,Mulat,291
+896,Acacia Villas,289
+897,Highland Park,278
+902,Golf,265
+903,Nobleton,246
+909,Noma,215
+910,Glen Ridge,214
+911,Sorrento,211
+912,Berrydale,205
+913,Layton,202
+914,Day,200
+915,Pine Level,199
+918,Aripeka,190
+919,Lake Lindsey,189
+920,Lloyd,186
+921,Pittman,183
+922,Morriston,176
+925,Bayport,168
+926,Pine Island,158
+927,Cloud Lake,140
+928,Captiva,129
+929,Lisbon,113
+930,Otter Creek,111
+933,Tildenville,104
+934,Limestone,93
+935,Bascom,90
+938,Matlacha Isles-Matlacha Shores,87
+939,Indian Creek,82
+940,Istachatta,77
+941,Belleair Shore,75
+942,Dickerson City,74
+943,Cobbtown,61
+944,Dixonville,43
+945,Plantation Island,40
+946,Sumatra,38
+947,Charleston Park,37
+948,Ona,34
+949,Altoona,33
+950,Lazy Lake,31
+951,Lake Buena Vista,25
+952,Bay Lake,23
+953,Marineland,9
