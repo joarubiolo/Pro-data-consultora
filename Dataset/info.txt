@@ -1,2 +1,2 @@
 En esta carpeta se cargan los dataset con la intencion de usarlos en el analisis del ETL/EDA
-Ante el inconveniente del peso del archivo se sube uno reducido para representar el mismo
+Ante el inconveniente del peso del archivo se sube uno con extensión .parquet, en lugar de .csv
