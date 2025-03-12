@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+google-cloud-bigquery
+google-cloud-storage
+collections
+plotly
+scikit-learn
+tensorflow
