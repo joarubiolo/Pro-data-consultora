@@ -9,8 +9,10 @@ import ast
 import plotly.express as px
 from sklearn.cluster import KMeans
 import os
+import io
 from sklearn.preprocessing import MinMaxScaler
-
+from xgboost import XGBClassifier
+import joblib
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
@@ -18,40 +20,16 @@ from tensorflow.keras.models import load_model
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, mean_squared_error
 from tensorflow.keras.layers import Dropout
 
-# pip install --upgrade google-cloud-bigquery
-# pip install --upgrade google-cloud-storage
 
-# pip install --upgrade bigframes
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\rubio\Documents\SoyHenry\Proyecto Final 2.0\clave json\deft-sight-449512-e3-19ad4d3c18f0.json"
 
-# Crear cliente
 client = bigquery.Client()
-
-# Verificar conexión
-print("Conexión exitosa a BigQuery!")
-
-project_id = 'deft-sight-449512-e3'
-
-dataset_id = 'datos_procesados'
-
-# Obtener la lista de tablas
-dataset_ref = client.dataset(dataset_id, project=project_id)
-tables = list(client.list_tables(dataset_ref))
-
-# Mostrar las tablas disponibles
-print(f"Tablas en el dataset '{dataset_id}':")
-for table in tables:
-    print(f"- {table.table_id}")
 
 metadatos = client.get_table('datos_procesados.metadatos')
 
-# Mostrar la información de la tabla
-print(f"Tabla encontrada.")  
-print(f"Número de filas: {metadatos.num_rows}")
-print(f"Número de columnas: {len(metadatos.schema)}")
-
 st.title("Pro-Data: Anlisis de mercado gastronomico")
 
-tab1, tab2 = st.tabs(["Analisis general", "Modelo de recomendacion"])
+tab1, tab2, tab3, tab4 = st.tabs(["Analisis general", "Modelo de recomendacion #1", "Modelo de recomendacion #2", "Modelo de recomendacion #3"])
 
 with tab1:
     st.subheader('Descubra aqui su proximo negocio gastronomico')
@@ -71,6 +49,7 @@ with tab1:
         """
         return client.query(consulta).to_dataframe()
 
+    @st.cache_data
     def obtener_reviews(city):
         consulta = f"""
         SELECT  *
@@ -290,6 +269,8 @@ with tab2:
 
     st.write("🔮 Predicción:", int(prediction))
 
+
+with tab3:
     st.write('Recomendacion de ciudades para el negocio')
 
     blob2 = bucket.blob("Modelo_P_h.h5")
@@ -318,22 +299,23 @@ with tab2:
     atributos = getquery2.to_dataframe()
     categorias = getquery3.to_dataframe()
 
+    lista_categorias = categorias['category'].tolist()
+
     metadatos1.drop(columns=['name', 'street_address', 'postal_code', 'latitude', 'longitude','review_count', 'is_open'],inplace=True)
 
-    
-    def atributos_destacados(atributos):
-        '''Devuelve los atributos que más se repiten ordenados de mayor a menor'''
-        df = getquery2.to_dataframe()
-        df['atributo_nombres'] = df['atributo_id'].apply(
-            lambda x: [atributos[atributos['atributo_id'] == id_]['atributo'].values[0] for id_ in x]
-        )
+    @st.cache_data
+    def atributos_destacados(df,atributos):
+        '''Devuelve los atributos que mas se repiten ordenados de mayor a menor '''
+        # Expandimos la lista de atributo_id para obtener el nombre del atributo correspondiente
+        df['atributo_nombres'] = df['atributo_id'].apply(lambda x: [atributos[atributos['atributo_id'] == id_]['atributo'].values[0] for id_ in x])
+        # Luego, unimos todos los atributos de todas las filas
         todos_los_atributos = df['atributo_nombres'].explode().tolist()
+        # Contamos las frecuencias de los atributos
         frecuencia_atributos = pd.Series(todos_los_atributos).value_counts()
         atributos_ordenados = frecuencia_atributos.index.tolist()
-
         return atributos_ordenados
 
-
+    @st.cache_data
     def Recomendación(categoria:str):
         '''Esta función recibe una categoría de restaurant y devuelve las 3 ciudades más recomendadas en las cuales empezar uno 
         y los atributos mas importantes que deería tener.'''
@@ -384,19 +366,53 @@ with tab2:
             f"Top atributos para la categoría {categoria}: {', '.join(map(str, top_atributos[:10]))}"
         )
 
-
-    st.dataframe(metadatos1.head())
-    lista_atributos = atributos['atributo'].tolist()
-    #st.write(lista_atributos)
-    lista_categorias = categorias['category'].tolist()
-    #st.write(lista_categorias)
-
-    seleccion1 = st.selectbox("Seleccionar atributo de su restaurant", atributos["atributo"], key="atributo")
-    if st.button("Recomendar"):
-        atributos_destacados(str(seleccion1))
-
-    seleccion2 = st.selectbox("Seleccionar categoria de su restaurant", categorias["category"], key="categoria")
+    seleccion2 = st.selectbox("Seleccionar categoria de su restaurant", lista_categorias, key="categoria")
     if st.button("Buscar"):
         Recomendación(str(seleccion2))
 
-    
+with tab4:
+    # Cargar modelo y datos
+    #modelo_xgb = joblib.load("./modelo_xgb_1.pkl")
+
+    storage = storage.Client()
+    bucket = storage.bucket("ml_databases")
+    blob = bucket.blob("modelo_xgb_1.pkl")
+    blob.download_to_filename("modelo_xgb_1.pkl")
+
+    ciudad_categoria = pd.read_csv("./ciudad_categoria_procesado.csv")
+
+    # ------------------- Función de Predicción -------------------
+    def predecir_categoria_recomendada(ciudad, df, modelo):
+        df_ciudad = df[df["city"] == ciudad][["city", "category", "competencia", "avg_rating", "avg_vader_score", "avg_textblob_score", "poblacion"]]
+
+        if df_ciudad.empty:
+            return f"No hay datos disponibles para la ciudad: {ciudad}"
+
+        # Seleccionar solo las columnas relevantes
+        X_nueva_ciudad = df_ciudad[["competencia", "avg_rating", "avg_vader_score", "avg_textblob_score", "poblacion"]]
+
+        # Hacer predicciones
+        df_ciudad["recomendado"] = modelo.predict(X_nueva_ciudad)
+
+        # Filtrar solo las categorías recomendadas
+        categorias_recomendadas = df_ciudad[df_ciudad["recomendado"] == 1]["category"]
+
+        return categorias_recomendadas
+
+    # ------------------- Interfaz en Streamlit -------------------
+    st.title("🛍️ Recomendador de Negocios en Streamlit")
+
+    # Input del usuario para ingresar la ciudad
+    ciudad_usuario = st.text_input("Ingresa la ciudad:")
+
+    if st.button("Predecir"):
+        if ciudad_usuario:
+            categorias = predecir_categoria_recomendada(ciudad_usuario, ciudad_categoria, modelo_xgb)
+
+            if isinstance(categorias, str):
+                st.warning(categorias)  # Si no hay datos, mostrar mensaje de advertencia
+            else:
+                st.success(f"Categorías recomendadas para {ciudad_usuario}:")
+                st.write(categorias.to_frame().reset_index(drop=True))  # Mostrar en formato tabular
+        else:
+            st.error("Por favor, ingresa una ciudad.")    
