@@ -24,11 +24,7 @@ from tensorflow.keras.layers import Dropout
 # pip install --upgrade bigframes
 
 # Crear cliente
-from google.auth.credentials import AnonymousCredentials
-
-client = bigquery.Client(credentials=AnonymousCredentials(), project="deft-sight-449512-e3")
-
-#client = bigquery.Client(project='deft-sight-449512-e3')
+client = bigquery.Client()
 
 # Verificar conexión
 print("Conexión exitosa a BigQuery!")
