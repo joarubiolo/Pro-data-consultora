@@ -2,32 +2,15 @@ import streamlit as st
 import pandas as pd
 import joblib
 from xgboost import XGBClassifier
-from google.cloud import storage
+
 import io
 
-# ------------------- Cargar Modelo y Datos desde GCS -------------------
-
-@st.cache_resource
-def cargar_modelo():
-    """Carga el modelo XGBoost desde Google Cloud Storage (GCS)."""
-    client = storage.Client()
-    bucket = client.bucket("ml_databases")
-    blob = bucket.blob("modelo_xgb_1.pkl")
-    modelo_path = io.BytesIO(blob.download_as_bytes())
-    return joblib.load(modelo_path)
-
-@st.cache_data
-def cargar_datos():
-    """Carga el dataset procesado desde GCS."""
-    client = storage.Client()
-    bucket = client.bucket("ml_databases")
-    blob = bucket.blob("ciudad_categoria_procesado.csv")
-    content = blob.download_as_bytes()
-    return pd.read_csv(io.BytesIO(content))
 
 # Cargar modelo y datos
-modelo_xgb = cargar_modelo()
-ciudad_categoria = cargar_datos()
+modelo_xgb = joblib.load("./modelo_xgb_1.pkl")
+
+
+ciudad_categoria = pd.read_csv("./ciudad_categoria_procesado.csv")
 
 # ------------------- Función de Predicción -------------------
 def predecir_categoria_recomendada(ciudad, df, modelo):
