@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pickle
 from google.cloud import bigquery
 from google.cloud import storage
 import collections
@@ -11,6 +12,8 @@ from sklearn.cluster import KMeans
 import os
 import io
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.cluster import KMeans
+import xgboost as xgb
 from xgboost import XGBClassifier
 import joblib
 import folium
@@ -127,53 +130,49 @@ with tab1:
     st.subheader("📌 Zonas con caracteristicas Gastronómica")
     st.write("A continuación se muestran las zonas y sus características relevantes")
 
+
     if not datos.empty:
         # Aplicar KMeans para segmentar en zonas
         coordenadas = datos[["latitude", "longitude"]]
-        modelo = KMeans(n_clusters=5, random_state=42, n_init=10)  # Asegurar estabilidad
+        modelo = KMeans(n_clusters=5, random_state=42, n_init=10)
         datos["zona"] = modelo.fit_predict(coordenadas)
 
-        datos['puntuacion_cat'] = datos['stars'].groupby(datos['zona']).transform('mean')
-        top_categ = datos[['latitude', 'longitude', 'categories', 'zona', 'puntuacion_cat']]
-        st.dataframe(top_categ.head(8), use_container_width=True)
+        # Encontrar la categoría más frecuente en cada zona
+        categoria_relevante = datos.groupby("zona")["categories"].agg(lambda x: x.mode()[0]).reset_index()
+        categoria_relevante.rename(columns={"categories": "categoria_relevante"}, inplace=True)
 
-        # Definir colores contrastantes manualmente para cada cluster
-        colores_zonas = {
-            0: "Zona 1",  # Rojo
-            1: "Zona 2",  # Verde
-            2: "Zona 3",  # Amarillo
-            3: "Zona 4",  # Azul
-            4: "Zona 5",  # Naranja
-        }
+        # Calcular el centroide de cada zona
+        centroides = datos.groupby("zona").agg({
+            "latitude": "mean",
+            "longitude": "mean"
+        }).reset_index()
 
-        # Asignar los colores fijos según la zona detectada por KMeans
-        top_categ["color"] = datos["zona"].map(colores_zonas)
+        # Unir el centroide con la categoría más frecuente
+        centroides = centroides.merge(categoria_relevante, on="zona", how="left")
 
-        # Calcular centro del mapa y zoom basado en la dispersión
-        centro_lat = top_categ["latitude"].mean()
-        centro_lon = top_categ["longitude"].mean()
-        lat_min, lat_max = datos["latitude"].min(), datos["latitude"].max()
-        lon_min, lon_max = datos["longitude"].min(), datos["longitude"].max()
-        
-        zoom_nivel = 12 if (lat_max - lat_min) < 0.1 and (lon_max - lon_min) < 0.1 else \
-                    10 if (lat_max - lat_min) < 0.5 and (lon_max - lon_min) < 0.5 else 8
+        # Crear nombres personalizados para las zonas
+        centroides["zona_nombre"] = centroides["zona"].astype(str) + " -> " + centroides["categoria_relevante"]
 
-        # Crear el mapa con los colores fijos
+        # Calcular centro del mapa
+        centro_lat = centroides["latitude"].mean()
+        centro_lon = centroides["longitude"].mean()
+
+        # Crear el mapa con un solo punto por zona
         fig_zonas = px.scatter_mapbox(
-            top_categ, lat="latitude", lon="longitude",
-            color="color",  # Usar la columna de colores fijos
-            hover_data={"categories": True, "latitude": False, "longitude": False, "puntuacion_cat": True},
-            labels={"categories": "categoria"},  # 🔹 Cambiar la etiqueta
-            mapbox_style="open-street-map", zoom=zoom_nivel,
+            centroides, lat="latitude", lon="longitude",
+            text="zona_nombre",  # Mostrar el nombre personalizado de la zona
+            hover_data={"zona_nombre": True, "latitude": False, "longitude": False, "categoria_relevante": False},
+            labels={"zona_nombre": "Zona"},  # Etiqueta en español
+            mapbox_style="open-street-map", zoom=10,
             center={"lat": centro_lat, "lon": centro_lon}
         )
 
-        fig_zonas.update_traces(marker=dict(size=18))  # Cambia '12' por el tamaño deseado
+        fig_zonas.update_traces(marker=dict(size=14))  # Tamaño adecuado
 
         st.plotly_chart(fig_zonas, use_container_width=True)
 
     else:
-        st.warning("No hay negocios disponibles para mostrar en el mapa.")
+        st.warning("⚠️ No hay negocios disponibles para mostrar en el mapa.")
 
 
 
@@ -430,6 +429,9 @@ with tab4:
     bucket = storage.bucket("ml_databases")
     blob = bucket.blob("modelo_xgb_1.pkl")
     blob.download_to_filename("modelo_xgb_1.pkl")
+
+    with open("modelo_xgb_1.pkl", "rb") as f:
+        modelo_xgb = pickle.load(f)
 
     client = bigquery.Client()
 
