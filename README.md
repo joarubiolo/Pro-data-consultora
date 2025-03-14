@@ -421,9 +421,9 @@ Algunos de los principales desafíos y optimizaciones implementadas fueron:
 
 ---
 
-#### 🔹 Modelos de MAchine Learning
+## **Modelos de Machine Learning**
 
-### **Modelo de Machine Learning 1**
+### **Modelo 1**
 
 Sistema de recomendación con que tiene como input una categoría de restaurantes y devuelve las tres mejores ciudades en las que se recomienda poner uno nuevo (mostrándolas en un mapa) y los 10 atributos que debería presentar para tener éxito dentro de esta categoría. Para mas información de como esta armado ir a ...
 
