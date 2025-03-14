@@ -421,7 +421,7 @@ Algunos de los principales desafíos y optimizaciones implementadas fueron:
 
 ---
 
-### **6️⃣ Desafíos y Optimización**
+#### 🔹 Modelos de MAchine Learning
 
 ### **Modelo de Machine Learning 1**
 
