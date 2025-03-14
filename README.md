@@ -427,3 +427,10 @@ Algunos de los principales desafíos y optimizaciones implementadas fueron:
 
 Sistema de recomendación con que tiene como input una categoría de restaurantes y devuelve las tres mejores ciudades en las que se recomienda poner uno nuevo (mostrándolas en un mapa) y los 10 atributos que debería presentar para tener éxito dentro de esta categoría. Para mas información de como esta armado ir a ...
 
+https://github.com/joarubiolo/Pro-data-consultora/blob/main/Modelo_ML/info.md
+
+### **Modelo 2**
+
+Este proyecto implementa un sistema de recomendación de negocios basado en Machine Learning utilizando Streamlit como interfaz de usuario. El modelo de aprendizaje automático analiza datos de diferentes ciudades y categorías de negocios, evaluando factores como competencia y puntuaciones de reseñas para sugerir las mejores opciones de negocio. Para mas informacion, debajo esta el link a la documentacion
+
+https://github.com/joarubiolo/Pro-data-consultora/blob/main/Modelo_ML2/info.md
