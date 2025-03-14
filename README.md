@@ -420,3 +420,7 @@ Algunos de los principales desafíos y optimizaciones implementadas fueron:
 ✅ Desglose de atributos y categorías para mejorar la organización y análisis de los datos.
 
 ---
+
+### **6️⃣ Desafíos y Optimización**
+
+
