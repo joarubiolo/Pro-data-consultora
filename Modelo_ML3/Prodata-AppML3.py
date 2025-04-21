@@ -5,7 +5,6 @@ from google.cloud import bigquery
 from google.cloud import storage
 import tensorflow as tf
 
-
 client = bigquery.Client()
 
 metadatos = client.get_table('datos_procesados.metadatos')
@@ -68,14 +67,13 @@ caracteristicas_esp = ['delivery', 'para llevar', 'comer en el local',
     'tarjetas de débito', 'pagos móviles NFC', 'reciclaje']
 
 
-# crear cliente de storage
+'''# crear cliente de storage
 storage = storage.Client()
 bucket = storage.bucket("ml_databases")
 blob = bucket.blob("trained_model.h5")
-blob.download_to_filename("trained_model.h5")
+blob.download_to_filename("trained_model.h5")'''
 
 # Cargar el modelo entrenado
-# model = storage.bucket('ml_databases').blob('trained_model.h5')
 model = tf.keras.models.load_model('trained_model.h5')
 
 input_data = np.zeros((1, 54))
