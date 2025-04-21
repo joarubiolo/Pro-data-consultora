@@ -5,9 +5,6 @@ from google.cloud import bigquery
 from google.cloud import storage
 import tensorflow as tf
 
-client = bigquery.Client()
-
-metadatos = client.get_table('datos_procesados.metadatos')
 
 st.title("Pro-Data: Anlisis de mercado gastronomico")
 
