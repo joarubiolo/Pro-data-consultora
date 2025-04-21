@@ -26,7 +26,7 @@ caracteristicas_esp = ['delivery', 'para llevar', 'comer en el local',
 
 
 # Cargar el modelo entrenado
-model = tf.keras.models.load_model('./trained_model.h5')
+model= load_model('trained-model.h5')
 
 input_data = np.zeros((1, 54))
 
