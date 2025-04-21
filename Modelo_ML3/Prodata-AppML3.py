@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from google.cloud import bigquery
-from google.cloud import storage
 import tensorflow as tf
 
 
